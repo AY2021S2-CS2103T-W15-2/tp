@@ -38,6 +38,9 @@ public class Person {
         this.tags.addAll(tags);
     }
 
+    /**
+     * Instantiates a Person object with the given parameters and a default blank remark.
+     */
     public Person(Name name, Phone phone, Email email, Address address, Set<Tag> tags) {
         requireAllNonNull(name, phone, email, address, tags);
         this.name = name;
