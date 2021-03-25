@@ -265,6 +265,8 @@ its methods strictly resembled those of its fellow `Command` classes.
   * Pros: More intuitive in terms of user experience.
   * Cons: Harder to implement.
 
+<br>
+
 ### Lock and unlock ClientBook feature
 
 #### Motivation
@@ -302,6 +304,8 @@ Below is a sequence diagram illustrating the flow of this entire process.
 
 The lock and unlock feature was designed such that the existing system is totally unaware of any locking and unlocking 
 of the existing data file `clientbook.json`. Hence, there is minimal dependency between existing components, the newly added commands and `Authentication`.
+
+<br>
 
 ### \[Proposed\] Undo/redo feature
 
