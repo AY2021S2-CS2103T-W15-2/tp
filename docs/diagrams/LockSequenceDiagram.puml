@@ -8,7 +8,7 @@ participant "u:LockCommand" as LockCommand LOGIC_COLOR
 end box
 
 box Storage STORAGE_COLOR_T1
-participant ":Authethication" as Authentication STORAGE_COLOR
+participant ":Authentication" as Authentication STORAGE_COLOR
 end box
 [-> LogicManager : execute(lock 1234)
 activate LogicManager
