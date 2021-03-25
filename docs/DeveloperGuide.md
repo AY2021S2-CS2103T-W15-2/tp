@@ -301,7 +301,7 @@ Below is a sequence diagram illustrating the flow of this entire process.
 #### Design Considerations
 
 The lock and unlock feature was designed such that the existing system is totally unaware of any locking and unlocking 
-of the existing data file `clientbook.json`. Hence, there is minimal dependency between existing components and the newly added commands and `Authentication`.
+of the existing data file `clientbook.json`. Hence, there is minimal dependency between existing components, the newly added commands and `Authentication`.
 
 ### \[Proposed\] Undo/redo feature
 
