@@ -49,7 +49,7 @@ Please use the table of contents to navigate through the user guide quickly. Cli
     * [**3.1** Feature Summary](#feature-summary)
     * [**3.2** What information can we store for each client contact?](#what-information-can-we-store-for-each-client-contact)
 * [**4.** Feature Description](#feature-description)
-    * [<span style="color:#b573c9">**4.1** Contact Management</span>](#contact-management-featuresspan)
+    * [<span style="color:#b573c9">**4.1** Contact Management</span>](#span-stylecolorb573c9contact-management-featuresspan)
         * [**4.1.1** `add`: Add client contact](#add-add-client-contact)
         * [**4.1.2** `edit`: Edit client contact](#edit-edit-client-contact)
         * [**4.1.3** `delete`Delete client contact](#delete-delete-client-contact)
@@ -304,7 +304,7 @@ to delete all the sample entries and start using your very own ClientBook.
 
 ## Feature Description
 
-### Contact Management Features</span>
+### <span style="color:#b573c9">Contact Management Features</span>
 
 
 ### `add`: Add client contact
