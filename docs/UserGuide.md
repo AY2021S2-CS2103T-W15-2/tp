@@ -771,24 +771,28 @@ If you get an error message (`Java command not found`), it means that Java is no
 
 | Action | Format | Example |
 | --------|------------------ | --- |
-[**Help**](#viewing-help--help) | `help` | `help` |
-[**Add**](#add-client-contact-add) | `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [i/POLICY_ID] [t/TAG]…​` | `add n/James Ho p/22224444 e/jamesho@example.com a/123, Clementi Rd, 1234665 i/Policy_1023 t/premium t/lifeinsurance` |
-[**Edit**](#edit-client-contact-edit) | `edit INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [a/ADDRESS] [i/POLICY_NUMBER]…​ [t/TAG]…​` | `edit 2 n/James Lee e/jameslee@example.com` |
-[**List**](#list-all-clients--list) | `list [-IDENTIFIER]` | `list -i` |
-[**Find**](#search-for-client-contact-based-on-keywords-find) | `find IDENTIFIER/KEYWORD [& KEYWORDS]…​ [-IDENTIFIER]…​` | `find a/Bedok & Clementi -p` |
-[**Policy**](#display-policies-associated-with-selected-client-policy) | `policy INDEX` | `policy 4` |
-[**Delete**](#delete-client-delete) | `delete INDEX` | `delete 3` |
+|<span style="color:#b573c9">**Contact Management**</span>|
+[**Add**](#add-add-client-contact) | `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [i/POLICY_ID] [t/TAG]…​` | `add n/James Ho p/22224444 e/jamesho@example.com a/123, Clementi Rd, 1234665 i/Policy_1023 t/premium t/lifeinsurance` |
+[**Edit**](#edit-edit-client-contact) | `edit INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [a/ADDRESS] [i/POLICY_NUMBER]…​ [t/TAG]…​` | `edit 2 n/James Lee e/jameslee@example.com` |
+[**Delete**](#delete-delete-client-contact) | `delete INDEX` | `delete 3` |
 [**Batch**](#batch-execute-commands-in-batch) | `batch COMMAND INDICES [ARGUMENTS]` | `batch edit 1, 2, 4 p/91234567 a/Hougang Green t/TanFamily i/FamPol#111` |
-[**Sort**](#sort-list-of-clients-sort) | `sort -IDENTIFIER -DIRECTION` | `sort -n -d` |
-[**Meet**](#schedule-a-meeting-with-a-client-meet) | `meet INDEX [-ACTION] DATE START END PLACE` | `meet 1 20.05.2021 15:00 16:00 MRT` |
+[**Meet**](#meet-schedule-a-meeting-with-a-client) | `meet INDEX [-ACTION] DATE START END PLACE` | `meet 1 20.05.2021 15:00 16:00 MRT` |
+|<span style="color:#f75c66">**Contact Viewing**</span>|
+[**List**](#list-list-all-clients) | `list [-IDENTIFIER]` | `list -i` |
+[**Find**](#find-search-for-client-contact-based-on-keywords) | `find IDENTIFIER/KEYWORD [& KEYWORDS]…​ [-IDENTIFIER]…​` | `find a/Bedok & Clementi -p` |
+[**Policy**](#policy-display-policies-associated-with-a-client) | `policy INDEX` | `policy 4` |
+[**Sort**](#sort-sort-list-of-clients) | `sort -IDENTIFIER -DIRECTION` | `sort -n -d` |
+|<span style="color:#ebc000">**Shortcuts**</span>|
 [**Add Shortcut**](#addshortcut-add-shortcut) | `addshortcut sn/SHORTCUT_NAME sc/SHORTCUT_COMMAND` | `addshortcut sn/ls sc/listshortcut` |
 [**Edit Shortcut**](#editshortcut-edit-shortcut) | `editshortcut sn/SHORTCUT_NAME sc/SHORTCUT_COMMAND` | `editshortcut sn/ls sc/list` |
 [**Delete Shortcut**](#deleteshortcut-delete-shortcut) | `deleteshortcut SHORTCUT_NAME` | `deleteshortcut ls` |
 [**List Shortcuts**](#listshortcut-list-all-shortcuts) | `listshortcut` | `listshortcut` |
 [**Clear Shortcuts**](#clearshortcut-clear-all-shortcuts) | `clearshortcut` | `clearshortcut` |
-[**Lock**](#lock-clientbook-with-a-user-selected-password-lock) | `lock [CURRENT_PASSWORD] NEW_PASSWORD` | `lock 123 456` |
-[**Unlock**](#unlock-clientbook--unlock) | `unlock [CURRENT_PASSWORD]` | `unlock 456` |
-[**Exit**](#exiting-the-program--exit) | `exit` | `exit` |
+|<span style="color:#3cb44b">**General**</span>|
+[**Lock**](#lock-lock-clientbook-with-a-user-selected-password) | `lock [CURRENT_PASSWORD] NEW_PASSWORD` | `lock 123 456` |
+[**Unlock**](#unlock-unlock-clientbook) | `unlock [CURRENT_PASSWORD]` | `unlock 456` |
+[**Help**](#help-viewing-help) | `help` | `help` |
+[**Exit**](#exit-exiting-the-program) | `exit` | `exit` |
 
 [Return to Table of Contents](#table-of-contents)
 
