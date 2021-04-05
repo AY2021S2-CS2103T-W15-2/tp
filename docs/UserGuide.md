@@ -38,7 +38,7 @@ If you are an experienced user, we have provided a convenient [Summary of Comman
 Please use the table of contents to navigate through the user guide quickly. ClientBook's commands are grouped into 
 <span style="color:#b573c9">**contact management**</span>, 
 <span style="color:#f75c66">**contact viewing**</span>,
-<span style="color:#e8e000">**shortcuts**</span> and 
+<span style="color:#ebc000">**shortcuts**</span> and 
 <span style="color:#3cb44b">**general**</span> commands.
 
 
@@ -60,7 +60,7 @@ Please use the table of contents to navigate through the user guide quickly. Cli
         * [**4.2.2** `find`: Search for client contact based on keywords](#find-search-for-client-contact-based-on-keywords)
         * [**4.2.3** `policy`: Display policies associated with a client](#policy-display-policies-associated-with-a-client)
         * [**4.2.4** `sort`: Sort list of clients](#sort-sort-list-of-clients)
-    * [<span style="color:#e8e000">**4.3** Shortcuts</span>](#shortcuts) 
+    * [<span style="color:#ebc000">**4.3** Shortcuts</span>](#shortcuts) 
         * [**4.3.1** `addshortcut`: Add shortcut](#addshortcut-add-shortcut)
         * [**4.3.2** `editshortcut`: Edit shortcut](#editshortcut-edit-shortcut)
         * [**4.3.3** `deleteshortcut`: Delete shortcut](#deleteshortcut-delete-shortcut)
