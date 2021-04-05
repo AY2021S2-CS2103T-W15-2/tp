@@ -49,24 +49,24 @@ Please use the table of contents to navigate through the user guide quickly. Cli
     * [**3.1** Feature Summary](#feature-summary)
     * [**3.2** What information can we store for each client contact?](#what-information-can-we-store-for-each-client-contact)
 * [**4.** Feature Description](#feature-description)
-    * [<span style="color:#b573c9">**4.1** Contact Management</span>](#span-stylecolorb573c9contact-management-featuresspan)
+    * [<span style="color:#b573c9">**4.1** Contact Management</span>](#contact-management-featuresspan)
         * [**4.1.1** `add`: Add client contact](#add-add-client-contact)
         * [**4.1.2** `edit`: Edit client contact](#edit-edit-client-contact)
         * [**4.1.3** `delete`Delete client contact](#delete-delete-client-contact)
         * [**4.1.4** `batch` Execute commands in batch](#batch-execute-commands-in-batch)
         * [**4.1.5** `meet`: Schedule a meeting with a client](#meet-schedule-a-meeting-with-a-client)
-    * [<span style="color:#f75c66">**4.2** Contact Viewing</span>](#contact-viewing)
+    * [<span style="color:#f75c66">**4.2** Contact Viewing</span>](#span-stylecolorf75c66contact-viewing-featuresspan)
         * [**4.2.1** `list`: List all clients](#list-list-all-clients)
         * [**4.2.2** `find`: Search for client contact based on keywords](#find-search-for-client-contact-based-on-keywords)
         * [**4.2.3** `policy`: Display policies associated with a client](#policy-display-policies-associated-with-a-client)
         * [**4.2.4** `sort`: Sort list of clients](#sort-sort-list-of-clients)
-    * [<span style="color:#ebc000">**4.3** Shortcuts</span>](#shortcuts) 
+    * [<span style="color:#ebc000">**4.3** Shortcuts</span>](#span-stylecolorebc000shortcutsspan) 
         * [**4.3.1** `addshortcut`: Add shortcut](#addshortcut-add-shortcut)
         * [**4.3.2** `editshortcut`: Edit shortcut](#editshortcut-edit-shortcut)
         * [**4.3.3** `deleteshortcut`: Delete shortcut](#deleteshortcut-delete-shortcut)
         * [**4.3.4** `listshortcut`: List all shortcuts](#listshortcut-list-all-shortcuts)
         * [**4.3.5** `clearshortcut`: Clear all shortcuts](#clearshortcut-clear-all-shortcuts)
-    * [<span style="color:#3cb44b">**4.4** General</span>](#general)  
+    * [<span style="color:#3cb44b">**4.4** General</span>](#span-stylecolor3cb44bgeneral-featuresspan)  
         * [**4.4.1** `lock`: Lock ClientBook with a user-selected password](#lock-lock-clientbook-with-a-user-selected-password)
         * [**4.4.2** `unlock`: Unlock ClientBook](#unlock-unlock-clientbook)
         * [**4.4.3** `help`: Viewing help](#help-viewing-help)
@@ -182,24 +182,29 @@ to delete all the sample entries and start using your very own ClientBook.
 
 | Feature | Description |
 | ----------- | ----------- |
-| [`help`](#help-viewing-help) | Viewing help |
+|<span style="color:#b573c9">**Contact Management**</span>|
 | [`add`](#add-add-client-contact) | Add client contact |
 | [`edit`](#edit-edit-client-contact) | Edit client contact |
+| [`delete`](#delete-delete-client-contact) | Delete client |
+| [`batch`](#batch-execute-commands-in-batch) | Execute commands in batch |
+| [`meet`](#meet-schedule-a-meeting-with-a-client) | Schedule a meeting with a client |
+|<span style="color:#f75c66">**Contact Viewing**</span>|
 | [`list`](#list-list-all-clients) | List all clients |
 | [`find`](#find-search-for-client-contact-based-on-keywords) | Search for client contact based on keywords |
 | [`policy`](#policy-display-policies-associated-with-a-client) | Display policies associated with a selected client |
-| [`delete`](#delete-delete-client-contact) | Delete client |
-| [`batch`](#batch-execute-commands-in-batch) | Execute commands in batch |
 | [`sort`](#sort-sort-list-of-clients) | Sort list of clients |
-| [`meet`](#meet-schedule-a-meeting-with-a-client) | Schedule a meeting with a client |
+|<span style="color:#ebc000">**Shortcuts**</span>|
 | [`addshortcut`](#addshortcut-add-shortcut) | Add shortcut |
 | [`editshortcut`](#editshortcut-edit-shortcut) | Edit shortcut |
 | [`deleteshortcut`](#deleteshortcut-delete-shortcut) | Delete shortcut |
 | [`listshortcut`](#listshortcut-list-all-shortcuts) | List all shortcuts |
 | [`clearshortcut`](#clearshortcut-clear-all-shortcuts) | Clear all shortcuts |
+|<span style="color:#3cb44b">**General**</span>|
 | [`lock`](#lock-lock-clientbook-with-a-user-selected-password) | Lock ClientBook with a user-selected password |
 | [`unlock`](#unlock-unlock-clientbook) | Unlock ClientBook |
+| [`help`](#help-viewing-help) | Viewing help |
 | [`exit`](#exit-exiting-the-program) | Exit ClientBook |
+| [Keyboard commands](#keyboard-commands) | Keyboard commands to enter command keywords quickly |
 | [Saving data](#saving-data) | Save the data to a file in the home folder |
 | [Editing data file](#editing-data-file) | Edit the data stored in the file in the home folder|
 
