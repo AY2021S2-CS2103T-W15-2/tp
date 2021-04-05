@@ -49,7 +49,7 @@ Please use the table of contents to navigate through the user guide quickly. Cli
     * [**3.1** Feature Summary](#feature-summary)
     * [**3.2** What information can we store for each client contact?](#what-information-can-we-store-for-each-client-contact)
 * [**4.** Feature Description](#feature-description)
-    * [<span style="color:#b573c9">**4.1** Contact Management</span>](#contact-management)
+    * [<span style="color:#b573c9">**4.1** Contact Management</span>](#span-stylecolorb573c9contact-management-featuresspan)
         * [**4.1.1** `add`: Add client contact](#add-add-client-contact)
         * [**4.1.2** `edit`: Edit client contact](#edit-edit-client-contact)
         * [**4.1.3** `delete`Delete client contact](#delete-delete-client-contact)
@@ -71,6 +71,7 @@ Please use the table of contents to navigate through the user guide quickly. Cli
         * [**4.4.2** `unlock`: Unlock ClientBook](#unlock-unlock-clientbook)
         * [**4.4.3** `help`: Viewing help](#help-viewing-help)
         * [**4.4.4** `exit`: Exiting the program](#exit-exiting-the-program)
+        * [**4.4.5** Keyboard commands](#keyboard-commands)
         * [**4.4.5** Saving data](#saving-data)
         * [**4.4.6** Editing data file](#editing-data-file)
         * [**4.4.7** Upcoming features!](#upcoming-features-v20-and-beyond)
@@ -298,16 +299,7 @@ to delete all the sample entries and start using your very own ClientBook.
 
 ## Feature Description
 
-### `help`: Viewing help 
-
-**Purpose**: Shows a message explaining how to access this help page.
-
-![help message](images/help-message.png)
-
-**Format**: `help`
-
-[Return to Table of Contents](#table-of-contents)
-<br><br>
+### Contact Management Features</span>
 
 
 ### `add`: Add client contact
@@ -363,6 +355,99 @@ A person can have any number of tags and insurance policies (including 0).
 
 [Return to Table of Contents](#table-of-contents)
 <br><br>
+
+### `delete`: Delete client contact
+
+**Purpose**: Deletes the specified client from ClientBook after listing or finding contacts.
+
+**Format**: `delete INDEX`
+
+* Deletes the client at the specified `INDEX`.
+* `INDEX` refers to the index number shown in the displayed client list.
+* `INDEX` must be more than 1, and less than or equal to the index of the last item in the displayed list.
+
+**Examples**:
+* `delete 2` deletes the 2nd person in the currently displayed list.
+
+* `find n/Charlotte` followed by `delete 1` deletes the 1st person in the results of the `find` command.
+
+[Return to Table of Contents](#table-of-contents)
+<br><br>
+
+### `batch`: Execute commands in batch
+
+**Purpose**: Allows you to execute some commands in bulk, so that you do not need to repeatedly type in the same
+commands.
+
+**Format**: `batch COMMAND INDICES [ARGUMENTS]`
+
+* Only `edit` and `delete` commands can be executed in batch.
+    * For more information on how these commands work and their parameters, refer to the
+      [`edit`](#edit-edit-client-contact) and [`delete`](#delete-delete-client-contact) sections accordingly.
+* `INDICES` are comma-separated e.g. `1, 2, 3`, and they refer to the index number shown in the displayed client list.
+* `INDICES` must all be more than 1, and less than or equal to the index of the last item in the displayed list.
+* The optional `ARGUMENTS` input is only applicable if the `COMMAND` is `edit`.
+* For `edit`, you can only batch edit the following attributes:
+    * phone number
+    * address
+    * tags
+    * insurance policies
+
+<div markdown="block" class="alert alert-info">
+:bulb: 
+**Tip**:
+The same rules apply when editing clients' phone number and address! <br>
+If a parameter is expected only once in the command, but you specified it multiple times, **only the last occurrence** of the parameter will be taken. 
+</div>
+
+**Examples**:
+* To batch edit the tags of more than 1 client contact.
+    * `batch edit 1, 2, 4 p/91234567 a/Hougang Green t/TanFamily i/FamPol#111`
+      <br><br>
+* To batch delete more than 1 client contact.
+    * `batch delete 1, 2, 4`
+      <br><br>
+      [Return to Table of Contents](#table-of-contents)
+<br><br>
+
+### `meet`: Schedule a meeting with a client
+
+**Purpose**: Schedules a meeting on a particular date, start time, end time and place with a client in ClientBook.
+
+**Format**: `meet INDEX [-ACTION] DATE START END PLACE`
+
+* Schedules a meeting with the client at the specified `INDEX`.
+* `INDEX` refers to the index number shown in the displayed client list.
+* `INDEX` must be more than 1, and less than or equal to the index of the last item in the displayed list.
+* `ACTION` can be `add` to add a meeting, `delete` to delete a meeting, `clear` to clear all meetings.
+* If `-ACTION` is empty, the default action is to add a meeting.
+* `DATE` must be in the `DD:MM:YYYY` format.
+* `START` and `END` must be in the `HH:MM` format.
+* `END` must be after `START` on the same `DATE`.
+* `PLACE` cannot be empty.
+* There is a check for clashes between meetings when adding a new meeting.
+
+**Examples**:
+* Add a meeting and there are no clashes.
+    * `meet 1 20.05.2021 15:00 16:00 MRT`
+
+      ![meet-add](images/meet-add.png)
+
+* Add a meeting but there are clashes.
+    * `meet 3 -add 20.05.2021 15:30 17:30 MRT`
+
+      ![meet-clash](images/meet-clash.png)
+
+* Delete a meeting.
+    * `meet 1 -delete 20.05.2021 15:00 16:00 MRT`
+
+* Clear all meetings.
+    * `meet 2 -clear`
+
+[Return to Table of Contents](#table-of-contents)
+<br><br>
+
+### <span style="color:#f75c66">Contact Viewing Features</span>
 
 
 ### `list`: List all clients 
@@ -445,62 +530,6 @@ Optional identifiers can be added to show the list of matched clients with only 
 <br><br>
 
 
-### `delete`: Delete client contact
-
-**Purpose**: Deletes the specified client from ClientBook after listing or finding contacts.
-
-**Format**: `delete INDEX`
-
-* Deletes the client at the specified `INDEX`.
-* `INDEX` refers to the index number shown in the displayed client list.
-* `INDEX` must be more than 1, and less than or equal to the index of the last item in the displayed list.
-
-**Examples**:
-* `delete 2` deletes the 2nd person in the currently displayed list.
-
-* `find n/Charlotte` followed by `delete 1` deletes the 1st person in the results of the `find` command.
-
-[Return to Table of Contents](#table-of-contents)
-<br><br>
-
-
-### `batch`: Execute commands in batch
-
-**Purpose**: Allows you to execute some commands in bulk, so that you do not need to repeatedly type in the same 
-commands.
-
-**Format**: `batch COMMAND INDICES [ARGUMENTS]`
-
-* Only `edit` and `delete` commands can be executed in batch.
-    * For more information on how these commands work and their parameters, refer to the
-      [`edit`](#edit-edit-client-contact) and [`delete`](#delete-delete-client-contact) sections accordingly.
-* `INDICES` are comma-separated e.g. `1, 2, 3`, and they refer to the index number shown in the displayed client list.
-* `INDICES` must all be more than 1, and less than or equal to the index of the last item in the displayed list.
-* The optional `ARGUMENTS` input is only applicable if the `COMMAND` is `edit`.
-* For `edit`, you can only batch edit the following attributes:
-    * phone number
-    * address
-    * tags
-    * insurance policies
-
-<div markdown="block" class="alert alert-info">
-:bulb: 
-**Tip**:
-The same rules apply when editing clients' phone number and address! <br>
-If a parameter is expected only once in the command, but you specified it multiple times, **only the last occurrence** of the parameter will be taken. 
-</div>
-
-**Examples**:
-* To batch edit the tags of more than 1 client contact.
-    * `batch edit 1, 2, 4 p/91234567 a/Hougang Green t/TanFamily i/FamPol#111`
-<br><br>
-* To batch delete more than 1 client contact.
-    * `batch delete 1, 2, 4`
-<br><br>
-      [Return to Table of Contents](#table-of-contents)
-<br><br>
-
-
 ### `sort`: Sort list of clients
 
 **Purpose**: Sorts the current list of clients in ClientBook.
@@ -523,43 +552,7 @@ If a parameter is expected only once in the command, but you specified it multip
 [Return to Table of Contents](#table-of-contents)
 <br><br>
 
-
-### `meet`: Schedule a meeting with a client
-
-**Purpose**: Schedules a meeting on a particular date, start time, end time and place with a client in ClientBook.
-
-**Format**: `meet INDEX [-ACTION] DATE START END PLACE`
-
-* Schedules a meeting with the client at the specified `INDEX`.
-* `INDEX` refers to the index number shown in the displayed client list.
-* `INDEX` must be more than 1, and less than or equal to the index of the last item in the displayed list.
-* `ACTION` can be `add` to add a meeting, `delete` to delete a meeting, `clear` to clear all meetings.
-* If `-ACTION` is empty, the default action is to add a meeting.
-* `DATE` must be in the `DD:MM:YYYY` format.
-* `START` and `END` must be in the `HH:MM` format.
-* `END` must be after `START` on the same `DATE`.
-* `PLACE` cannot be empty.
-* There is a check for clashes between meetings when adding a new meeting.
-
-**Examples**:
-* Add a meeting and there are no clashes.
-    * `meet 1 20.05.2021 15:00 16:00 MRT`
-
-      ![meet-add](images/meet-add.png)
-
-* Add a meeting but there are clashes.
-    * `meet 3 -add 20.05.2021 15:30 17:30 MRT`
-
-      ![meet-clash](images/meet-clash.png)
-
-* Delete a meeting.
-    * `meet 1 -delete 20.05.2021 15:00 16:00 MRT`
-
-* Clear all meetings.
-    * `meet 2 -clear`
-
-[Return to Table of Contents](#table-of-contents)
-<br><br>
+### <span style="color:#ebc000">Shortcuts</span>
 
 
 ### `addshortcut`: Add shortcut
@@ -634,6 +627,8 @@ If a parameter is expected only once in the command, but you specified it multip
 [Return to Table of Contents](#table-of-contents)
 <br><br>
 
+### <span style="color:#3cb44b">General Features</span>
+
 
 ### `lock`: Lock ClientBook with a user-selected password 
 
@@ -688,6 +683,16 @@ If a parameter is expected only once in the command, but you specified it multip
 [Return to Table of Contents](#table-of-contents)
 <br><br>
 
+### `help`: Viewing help
+
+**Purpose**: Shows a message explaining how to access this help page.
+
+![help message](images/help-message.png)
+
+**Format**: `help`
+
+[Return to Table of Contents](#table-of-contents)
+<br><br>
 
 ### `exit`: Exiting the program 
 
