@@ -209,6 +209,9 @@ to delete all the sample entries and start using your very own ClientBook.
 | [Editing data file](#editing-data-file) | Edit the data stored in the file in the home folder|
 
 ### What information can we store for each client contact?
+Each client attribute such as name and address have been assigned identifiers so that you do not have to type out
+the entire attribute when using ClientBook. For example, name has been abbreviated to n. Listed below are all the identifiers
+which correspond to client attributes as well as restrictions that have to be followed when they are used as part of a command.
 
 <table>
   <tr>
