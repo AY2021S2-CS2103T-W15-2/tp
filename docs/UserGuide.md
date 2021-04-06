@@ -88,26 +88,26 @@ The quick start section provides a tutorial which will guide you through the ste
 
 <br>
 
-<p>Step 1.</p>
+<p><b>Step 1.</b></p>
 
 Ensure you have Java `11` or above installed in your Computer.
    * To check if you have this installed or for instructions on how to install, refer to our FAQ [here](#frequently-asked-questions).
 
 <br>
 
-<p>Step 2.</p>
+<p><b>Step 2.</b></p>
 
 Download the latest `clientbook.jar` [here](https://github.com/AY2021S2-CS2103T-W15-2/tp/releases/tag/v1.4).
    
 <br>
 
-<p>Step 3.</p>
+<p><b>Step 3.</b></p>
 
 Copy the file to the folder (we will be referring to this folder as the _home folder_) where you want to store the ClientBook application and your client information.
 
 <br>
 
-<p>Step 4.</p>
+<p><b>Step 4.</b></p>
 
 Double-click the downloaded `clientbook.jar` file in your home folder to start the app. The screen below should appear in a few seconds. 
    * Alternatively, for those who are tech-savvy, you can launch the application via Command Prompt in Windows or Terminal in Mac OS/Linux using the following command: `java -jar clientbook.jar`. 
@@ -118,7 +118,7 @@ Double-click the downloaded `clientbook.jar` file in your home folder to start t
     
 <br>
 
-<p>Step 5.</p>
+<p><b>Step 5.</b></p>
 
 Type the command in the command box and press Enter to execute it.
    * Some example commands you can try:
