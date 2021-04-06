@@ -232,10 +232,8 @@ email (e.g. company email address) and insurance policies (co-owner of the same 
     <td> Phone number </td>
     <td> <code>p</code> </td>
     <td> 
-         <ul>
-            <li>Should only contain numbers</li>
-            <li>Must contain at least 3 digits</li>
-        </ul>
+        <li>Should only contain numbers</li>
+        <li>Must contain at least 3 digits</li>
     </td>
   </tr>
   <tr>
