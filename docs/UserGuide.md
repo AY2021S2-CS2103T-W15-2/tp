@@ -103,7 +103,7 @@ Download the latest `clientbook.jar` [here](https://github.com/AY2021S2-CS2103T-
 
 <p><b>Step 3.</b></p>
 
-Copy the file to the folder (we will be referring to this folder as the _home folder_) where you want to store the ClientBook application and your client information.
+Copy the file to the folder (we will be referring to this folder as the **_home folder_**) where you want to store the ClientBook application and your client information.
 
 <br>
 
