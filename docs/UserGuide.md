@@ -213,11 +213,15 @@ Each client attribute such as name and address have been assigned identifiers so
 the entire attribute when using ClientBook. For example, name has been abbreviated to n. Listed below are all the identifiers
 which correspond to client attributes as well as restrictions that have to be followed when they are used as part of a command.
 
+Please note that clients may have the same name (two different persons with the same name), phone number (e.g. company phone number), address (e.g. company address),
+email (e.g. company email address) and insurance policies (co-owner of the same policy).
+
+
 <table>
   <tr>
     <td> <b>Attribute</b> </td>
     <td> <b>Identifier(s)</b> </td>
-    <td> <b>Restriction(s) (if any)</b> </td>
+    <td> <b>Notes/Restrictions</b> </td>
   </tr>
   <tr>
     <td> Name </td>
@@ -228,8 +232,10 @@ which correspond to client attributes as well as restrictions that have to be fo
     <td> Phone number </td>
     <td> <code>p</code> </td>
     <td> 
-         <ul><li>Should only contain numbers</li></ul>
-         <ul><li>Must contain at least 3 digits</li></ul> 
+         <ul>
+            <li>Should only contain numbers</li>
+            <li>Must contain at least 3 digits</li>
+        </ul>
     </td>
   </tr>
   <tr>
@@ -240,27 +246,39 @@ which correspond to client attributes as well as restrictions that have to be fo
   <tr>
     <td> Email </td>
     <td> <code>e</code> </td>
-    <td> <ul><li>Should be of the form <code>name@email.com</code></li></ul>
-         <ul><li><code>name</code> part of email should not contain the following characters <code>!#$%&'*+/=?\`{&#x7c;}~^.-</code></li></ul>
-         <ul><li> <code>email</code> part of email should: 
-             <ul><li>Be at least 2 characters long</li></ul>
-             <ul><li>Start and end with either alphabets or numbers</li></ul>
-             <ul><li>Consist only of alphabets and/or numbers, hyphens, or periods between characters</li></ul>
-         </li></ul>
+    <td> 
+        <ul>
+            <li>Should be of the form <code>name@email.com</code></li>
+            <li><code>name</code> part of email should not contain the following characters <code>!#$%&'*+/=?\`{&#x7c;}~^.-</code></li>
+            <li> <code>email</code> part of email should: 
+            <li>Be at least 2 characters long</li>
+            <li>Start and end with either alphabets or numbers</li>
+            <li>Consist only of alphabets and/or numbers, hyphens, or periods between characters</li>
+        </ul>
     </td>
   </tr>
   <tr>
     <td> Tag </td>
     <td> <code>t</code> </td>
-    <td> <ul><li>Optional</li></ul> </td>
+    <td> 
+        <ul>
+            <li>Optional</li>
+            <li>Tags can be used to label your relationship with your client e.g. friend, family, classmate</li>
+            <li>Tags associated with a client are shown in alphabetical order in ClientBook</li>
+        </ul> 
+    </td>
   </tr>
   <tr>
     <td> Insurance Policies </td>
     <td> <code>i</code> </td>
-    <td> <ul><li>Optional</li></ul> 
-         <ul><li>Should be of the form <code>PolicyId>URL</code> or <code>PolicyId</code></li></ul> 
-         <ul><li><code>PolicyId</code> part should not contain the <code>></code> character</li></ul>
-         <ul><li><code>URL</code> part should not contain the <code>></code> character (not a valid website link if it contains <code>></code>)</li></ul> 
+    <td> 
+        <ul>
+            <li>Optional</li>
+            <li>Should be of the form <code>PolicyId>URL</code> or <code>PolicyId</code></li>
+            <li><code>PolicyId</code> part should not contain the <code>></code> character</li>
+            <li><code>URL</code> part should not contain the <code>></code> character (not a valid website link if it contains <code>></code>)</li>
+            <li>A client should not have duplicate insurance policies</li>
+        </ul>
     </td>
   </tr>
 </table>
@@ -312,7 +330,7 @@ which correspond to client attributes as well as restrictions that have to be fo
 
 ### `add`: Add client contact
 
-**Purpose**: Adds a client as contact to ClientBook.
+**Purpose**: Adds a client as a new contact to ClientBook.
 
 **Format**: `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [i/POLICY_ID[>POLICY_URL]] [t/TAG]…​`
 
@@ -345,7 +363,7 @@ A person can have any number of tags and insurance policies (including 0).
 
 * Edits the client at the specified `INDEX`.
     * `INDEX` refers to the index number shown in the displayed client list.
-    * `INDEX` must be more than 1, and less than or equal to the index of the last item in the displayed list.
+    * `INDEX` must be 1 or higher, and less than or equal to the index of the last item in the displayed list.
 * At least one of the optional fields must be provided.
 
 <div markdown="block" class="alert alert-info">
@@ -366,13 +384,13 @@ A person can have any number of tags and insurance policies (including 0).
 
 ### `delete`: Delete client contact
 
-**Purpose**: Deletes the specified client from ClientBook after listing or finding contacts.
+**Purpose**: Deletes a specified client's contact from ClientBook.
 
 **Format**: `delete INDEX`
 
 * Deletes the client at the specified `INDEX`.
 * `INDEX` refers to the index number shown in the displayed client list.
-* `INDEX` must be more than 1, and less than or equal to the index of the last item in the displayed list.
+* `INDEX` must be 1 or higher, and less than or equal to the index of the last item in the displayed list.
 
 **Examples**:
 * `delete 2` deletes the 2nd person in the currently displayed list.
@@ -384,16 +402,16 @@ A person can have any number of tags and insurance policies (including 0).
 
 ### `batch`: Execute commands in batch
 
-**Purpose**: Allows you to execute some commands in bulk, so that you do not need to repeatedly type in the same
-commands.
+**Purpose**: Executes the same `edit` or `delete` commands for multiple client contacts so that you do not have to
+enter the same command multiple times.
 
 **Format**: `batch COMMAND INDICES [ARGUMENTS]`
 
 * Only `edit` and `delete` commands can be executed in batch.
     * For more information on how these commands work and their parameters, refer to the
       [`edit`](#edit-edit-client-contact) and [`delete`](#delete-delete-client-contact) sections accordingly.
-* `INDICES` are comma-separated e.g. `1, 2, 3`, and they refer to the index number shown in the displayed client list.
-* `INDICES` must all be more than 1, and less than or equal to the index of the last item in the displayed list.
+* `INDICES` are comma-separated e.g. `1,2,3` or `1, 2, 3` and they refer to the index number shown in the displayed client list.
+* `INDICES` must be 1 or higher, and less than or equal to the index of the last item in the displayed list.
 * The optional `ARGUMENTS` input is only applicable if the `COMMAND` is `edit`.
 * For `edit`, you can only batch edit the following attributes:
     * phone number
@@ -409,8 +427,8 @@ If a parameter is expected only once in the command, but you specified it multip
 </div>
 
 **Examples**:
-* To batch edit the tags of more than 1 client contact.
-    * `batch edit 1, 2, 4 p/91234567 a/Hougang Green t/TanFamily i/FamPol#111`
+* Updating the particulars of clients belonging to the same family and owning the same insurance policy.
+    * `batch edit 1, 2, 4 p/61234567 a/Hougang Green t/TanFamily i/FamPol#111`
       <br><br>
 * To batch delete more than 1 client contact.
     * `batch delete 1, 2, 4`
@@ -426,7 +444,7 @@ If a parameter is expected only once in the command, but you specified it multip
 
 * Schedules a meeting with the client at the specified `INDEX`.
 * `INDEX` refers to the index number shown in the displayed client list.
-* `INDEX` must be more than 1, and less than or equal to the index of the last item in the displayed list.
+* `INDEX` must be 1 or higher, and less than or equal to the index of the last item in the displayed list.
 * `ACTION` can be `add` to add a meeting, `delete` to delete a meeting, `clear` to clear all meetings.
 * If `-ACTION` is empty, the default action is to add a meeting.
 * `DATE` must be in the `DD:MM:YYYY` format.
@@ -460,20 +478,23 @@ If a parameter is expected only once in the command, but you specified it multip
 
 ### `list`: List all clients 
 
-**Purpose**: Shows a list of all clients in ClientBook. Optional identifiers can be specified to show a list with only the desired attributes.
+**Purpose**: Shows a list of all clients in ClientBook. You may use optional identifiers in conjunction with the minus (-)
+symbol to select which client details you want to see, so that you can have a clutter free view of your client contacts.
 
-**Format**: `list [-n] [-p] [-e] [-a] [-i] [-t] [-m]`
+**Format**: `list [-p] [-e] [-a] [-i] [-m]`
 
 **Examples**: 
 *  `list` without any specified identifiers shows a list of all clients and all their information.
-  * `list`
+
+![list](images/list.png)
     
-    ![list](images/list.png)
+*  One or more identifiers can be used to make `list` only show the specified information. The following command 
+   shows a list of all clients and their phone number and insurance policy number. A client's name and tags will
+   be shown regardless of the identifiers that you specify.
+   
+`list -p -i`
     
-*  One or more identifiers can be used to make `list` only show the specified information. The following command shows a list of all clients and their phone number and insurance policy number.
-   * `list -p -i`
-    
-     ![list phone](images/list-phone-policy-annotate.png)
+![list phone](images/list-phone-policy-annotate.png)
 
 [Return to Table of Contents](#table-of-contents)
 <br><br>
@@ -481,16 +502,19 @@ If a parameter is expected only once in the command, but you specified it multip
   
 ### `find`: Search for client contact based on keywords
 
-**Purpose**: Finds and displays all clients whose field (name, phone, email, address, tags, insurance policy) contains any of the given keywords.
-Optional identifiers can be added to show the list of matched clients with only the specified field(s), similar to the [`list`](#list-list-all-clients) command.
+**Purpose**: Finds client contacts based on the attribute and keywords that you specify.
+You may use optional identifiers in conjunction with the minus(-) symbol to limit the details shown, similar to the [`list`](#list-list-all-clients) command.
 
 **Format**: `find IDENTIFIER/KEYWORD [& KEYWORDS]…​ [-IDENTIFIER]…​`
 
+* The `IDENTIFIER` specifies which attribute of the client you want to search for. E.g. if you want to search for a client contact
+  by name, use the `n` identifier.
+    * For more information about the identifiers for each field, refer to [what information can we store for each client contact?](#what-information-can-we-store-for-each-client-contact).
+* You may not use multiple attributes as your search criteria e.g. you cannot search for a client using address and name at the same time.
+  A command like `find n/David a/Botanic gardens` is invalid.
 * The search is **case-insensitive**. 
   * E.g. `hans` will match `Hans`.
 * The **order of the keywords does not matter**.
-* Only **one** `IDENTIFIER` can be used in each `find` command.
-    * For more information about the identifiers for each field, refer to [What information can we store for each client contact?](#what-information-can-we-store-for-each-client-contact).
 * The delimiter `&` between keywords allows you to search for Clients using multiple keywords.
     
 **Examples**:
@@ -523,9 +547,9 @@ Optional identifiers can be added to show the list of matched clients with only 
 
 **Format**: `policy INDEX`
 
-* Selects the client at the specified `INDEX`.
+* Displays policies owned by the client at the specified `INDEX`.
 * `INDEX` refers to the index number shown in the displayed client list.
-* `INDEX` must be more than 1, and less than or equal to the index of the last item in the displayed list.
+* `INDEX` must be 1 or higher, and less than or equal to the index of the last item in the displayed list.
 
 **Examples**:
 * `policy 2` displays the policies associated with the 2nd person in the currently displayed list.
@@ -540,20 +564,21 @@ Optional identifiers can be added to show the list of matched clients with only 
 
 ### `sort`: Sort list of clients
 
-**Purpose**: Sorts the current list of clients in ClientBook.
+**Purpose**: Sorts the current list of clients in ClientBook so that you can view your clients in a particular order.
 
 **Format**: `sort -IDENTIFIER -DIRECTION`
 
 * Sorts the list of clients according to the specified `IDENTIFIER` and `DIRECTION`.
-* The specified `IDENTIFIER` can be `-n` to sort by name alphabetically or `-i` to sort by number of insurance policies, but not both.
+* The specified `IDENTIFIER` can be `-n` to sort your clients by name alphabetically or `-i` to sort by number of insurance policies, but not both.
 * The specified `DIRECTION` can be `-asc` for ascending order or `-des` for descending order, but not both.
 
 **Examples**:
-* Sort the current list of clients by name in **descending** number of insurance policies.
+* If you want to see which of your clients have the most policies with you, sort the current list of clients 
+  in **descending** number of insurance policies.
     * `sort -i -des`
 
-* Sort the current list of clients by name in **descending** alphabetical order.
-    * `sort -n -des`
+* You can also sort the current list of clients by name in **ascending** alphabetical order.
+    * `sort -n -asc`
 
       ![sort](images/sort-des-annotate.png)
 
@@ -561,21 +586,22 @@ Optional identifiers can be added to show the list of matched clients with only 
 <br><br>
 
 ### <span style="color:#ebc000">Shortcuts</span>
-
+We understand that you might have commands that you frequently use. You may use shortcuts to abbreviate
+those commands to make using ClientBook more convenient.
 
 ### `addshortcut`: Add shortcut
 
-**Purpose**: Adds a shortcut to the existing shortcut library.
+**Purpose**: Adds a command shortcut to the shortcut library.
 
 **Format**: `addshortcut sn/SHORTCUT_NAME sc/SHORTCUT_COMMAND`
 
 * Adds a shortcut named `SHORTCUT_NAME` to the shortcut library and assigns a valid command `SHORTCUT_COMMAND` to it.
-* The specified `SHORTCUT_NAME` must be alphanumeric and must not already exist the shortcut library.
+* The specified `SHORTCUT_NAME` must be [alphanumeric](#glossary) and must not already exist the shortcut library.
 * The specified `SHORTCUT_COMMAND` must be a valid command.
 
 **Examples**:
-* Add a shortcut named `ls` to represent the command `listshortcut` in the shortcut library.
-    * `addshortcut sn/ls sc/listshortcut`
+* Add a shortcut named `sna` to represent the command `sort -n -asc` (sort list by name in ascending order) in the shortcut library.
+    * `addshortcut sn/sna sc/sort -n -asc`
 
 [Return to Table of Contents](#table-of-contents)
 <br><br>
@@ -588,7 +614,7 @@ Optional identifiers can be added to show the list of matched clients with only 
 **Format**: `editshortcut sn/SHORTCUT_NAME sc/SHORTCUT_COMMAND`
 
 * Finds a shortcut named `SHORTCUT_NAME` in the shortcut library and replaces its existing command with the provided valid command `SHORTCUT_COMMAND`.
-* The specified `SHORTCUT_NAME` must be alphanumeric and must exist the shortcut library.
+* The specified `SHORTCUT_NAME` must be [alphanumeric](#glossary) and must exist the shortcut library.
 * The specified `SHORTCUT_COMMAND` must be a valid command.
 
 **Examples**:
@@ -601,12 +627,12 @@ Optional identifiers can be added to show the list of matched clients with only 
 
 ### `deleteshortcut`: Delete shortcut
 
-**Purpose**: Deletes a shortcut in the existing shortcut library.
+**Purpose**: Deletes a shortcut from the shortcut library.
 
 **Format**: `deleteshortcut SHORTCUT_NAME`
 
 * Finds a shortcut named `SHORTCUT_NAME` in the shortcut library and deletes it from the shortcut library.
-* The specified `SHORTCUT_NAME` must be alphanumeric and must exist in the shortcut library.
+* The specified `SHORTCUT_NAME` must be [alphanumeric](#glossary) and must exist in the shortcut library.
 
 **Examples**:
 * Delete a shortcut named `ls` in the shortcut library.
@@ -618,7 +644,8 @@ Optional identifiers can be added to show the list of matched clients with only 
 
 ### `listshortcut`: List all shortcuts
 
-**Purpose**: Lists all shortcuts in the existing shortcut library.
+**Purpose**: Lists all shortcuts in the existing shortcut library in case you want to view the shortcuts that you have previously
+created.
 
 **Format**: `listshortcut`
 
@@ -626,9 +653,9 @@ Optional identifiers can be added to show the list of matched clients with only 
 <br><br>
 
 
-### `clearshortcut`: Clear all shortcuts
+### `clearshortcut`: Delete all shortcuts
 
-**Purpose**: Clears all shortcuts in the existing shortcut library.
+**Purpose**: Delets all shortcuts in the existing shortcut library.
 
 **Format**: `clearshortcut`
 
@@ -640,7 +667,7 @@ Optional identifiers can be added to show the list of matched clients with only 
 
 ### `lock`: Lock ClientBook with a user-selected password 
 
-**Purpose**: Locks ClientBook with a user-selected password.
+**Purpose**: Locks ClientBook and ClientBook's data so that your clients' information is protected against unauthorised access.
 
 **Format**: `lock [CURRENT_PASSWORD] [NEW_PASSWORD]`
 
@@ -649,8 +676,10 @@ Optional identifiers can be added to show the list of matched clients with only 
 * When `CURRENT_PASSWORD` and `NEW_PASSWORD` fields are both omitted, ClientBook will attempt to lock itself using the last used password that is safely stored on your device.
 
 <div markdown="block" class="alert alert-info">
-:exclamation: **Note**: After setting a password, ClientBook can only be launched through Command Prompt or Terminal.
-  * Refer to [Quick Start](#quick-start) on how to launch the application through Command Prompt or Terminal.
+:exclamation: **Note**: 
+* After setting a password, ClientBook can only be launched through Command Prompt or Terminal.
+    * Refer to [Quick Start](#quick-start) on how to launch the application through Command Prompt or Terminal.
+* ClientBook's data will be unlocked when ClientBook is running and will only be encrypted when ClientBook closes (except when it closes suddenly, such as when it is terminated by task manager in Windows).
 </div>
 
 **Examples**:
@@ -670,12 +699,13 @@ Optional identifiers can be added to show the list of matched clients with only 
 
 ### `unlock`: Unlock ClientBook 
 
-**Purpose**: Unlocks ClientBook.
+**Purpose**: Removes ClientBook's password lock.
 
 **Format**: `unlock CURRENT_PASSWORD`
 
 * Verifies the current password before unlocking ClientBook.
 * ClientBook's password is removed after executing this command. After executing this command, future launches of ClientBook will not require a password.
+* ClientBook's data will no longer be password protected.
 
 **Examples**:
 * Unlock ClientBook with wrong password `123`.
@@ -717,8 +747,8 @@ Optional identifiers can be added to show the list of matched clients with only 
 [keyboard commands](#summary-of-keyboard-commands) which when pressed, will fill in the command keyword for you.
 
 ### Saving data
+ClientBook saves its data in a zip-contained json file in the [home folder](#quick-start) automatically after any command that changes the data. There is no need to save manually.
 
-**Purpose**: ClientBook saves its data to a file in the home folder automatically after any command that changes the data. There is no need to save manually.
 
 [Return to Table of Contents](#table-of-contents)
 <br><br>
@@ -726,10 +756,10 @@ Optional identifiers can be added to show the list of matched clients with only 
 
 ### Editing data file
 
-**Purpose**: ClientBook saves its data as a JSON file `[JAR file location]/data/clientbook.json`. Advanced users are welcome to update data directly by editing that data file.
+ClientBook saves its data as a JSON file. Advanced users are welcome to update their client data directly by editing the data file.
 
-* The data file is stored in a zip file inside the `data` folder in the same folder. 
-* If you previously set a `lock` for ClientBook, the zip folder can be unzipped with that same password.
+* The data file is stored in a zip file `clientbook.zip` inside the `data` folder in the [home folder](#quick-start). 
+* If you have previously set a `lock` for ClientBook, the zip folder can be unzipped with that same password.
 
 <div markdown="block" class="alert alert-info">
 :exclamation: **Caution**:
@@ -811,31 +841,36 @@ CTRL + S | `sort` |
 --------------------------------------------------------------------------------------------------------------------
 ## Glossary
 
-1. **CLI** (Command Line Interface) A text box like interface which allows a user to enter and execute commands.
+1. **[alphanumeric](#glossary)** A character or group of characters is considered [alphanumeric](#glossary) if it contains only numbers and alphabets.
 
 
-2. **GUI** (Graphical user interface) A form of user interface with graphical features such as icons that allows a user to interact with our program.
+2. **Attribute** The types of information you can store in ClientBook. E.g. phone number, address, name of your clients.
+   
+
+3. **CLI** (Command Line Interface) A text box like interface which allows a user to enter and execute commands.
 
 
-3. **UI** (User Interface) An interface for a user to interact with a program.
+4. **Command Prompt** A command line interpreter application on the Windows operating system.
 
 
-4. **Java** A programming language and computing platform that is used to run ClientBook.
+5. **GUI** (Graphical user interface) A form of user interface with graphical features such as icons that allows a user to interact with our program.
 
 
-5. **Command Prompt** A command line interpreter application on the Windows operating system.
+6. **Identifier** The alphabetical letter associated with an attribute.
 
 
-6. **Terminal** A command line interpreter application on MacOS/Linux operating systems.
+7. **Java** A programming language and computing platform that is used to run ClientBook.
 
 
-7. **Attribute** The types of information you can store in ClientBook. E.g. phone number, address, name of your clients.
+8. **JSON** (JavaScript Object Notation) A format for storing and transporting data.
 
 
-8. **Identifier** The alphabetical letter associated with an attribute.
+9. **Terminal** A command line interpreter application on MacOS/Linux operating systems.
 
 
-9. **JSON** (JavaScript Object Notation) A format for storing and transporting data.
+10. **UI** (User Interface) An interface for a user to interact with a program.
+
+
 
 [Return to Table of Contents](#table-of-contents)
 
