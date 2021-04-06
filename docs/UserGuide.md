@@ -853,7 +853,7 @@ CTRL + S | `sort` |
 --------------------------------------------------------------------------------------------------------------------
 ## Glossary
 
-1. **[alphanumeric](#glossary)** A character or group of characters is considered [alphanumeric](#glossary) if it contains only numbers and alphabets.
+1. **Alphanumeric** A character or group of characters is considered alphanumeric if it contains only numbers and alphabets.
 
 
 2. **Attribute** The types of information you can store in ClientBook. E.g. phone number, address, name of your clients.
@@ -892,7 +892,7 @@ CTRL + S | `sort` |
 
 Didn't find what you were looking for? Contact us at [clientbook@email.com](clientbook@email.com).
 
-ClientBook is still a work in progress and we hope to be able to further improve ClientBook to suit your needs. 
+ClientBook is still a work in progess. We hope to be able to further improve ClientBook to suit your needs. 
 Should you have any suggestions, feel free to drop us an email! 
 We would love to hear from you insurance agents who are actively out and about, providing us with the best services.
 
