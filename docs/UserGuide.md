@@ -804,7 +804,7 @@ If you get an error message (`Java command not found`), it means that Java is no
 [**List**](#list-list-all-clients) | `list [-IDENTIFIER]` | `list -i` |
 [**Find**](#find-search-for-client-contact-based-on-keywords) | `find IDENTIFIER/KEYWORD [& KEYWORDS]…​ [-IDENTIFIER]…​` | `find a/Bedok & Clementi -p` |
 [**Policy**](#policy-display-policies-associated-with-a-client) | `policy INDEX` | `policy 4` |
-[**Sort**](#sort-sort-list-of-clients) | `sort -IDENTIFIER -DIRECTION` | `sort -n -d` |
+[**Sort**](#sort-sort-list-of-clients) | `sort -IDENTIFIER -DIRECTION` | `sort -n -des` |
 |<span style="color:#ebc000">**Shortcuts**</span>|
 [**Add Shortcut**](#addshortcut-add-shortcut) | `addshortcut sn/SHORTCUT_NAME sc/SHORTCUT_COMMAND` | `addshortcut sn/ls sc/listshortcut` |
 [**Edit Shortcut**](#editshortcut-edit-shortcut) | `editshortcut sn/SHORTCUT_NAME sc/SHORTCUT_COMMAND` | `editshortcut sn/ls sc/list` |
