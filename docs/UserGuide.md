@@ -88,20 +88,28 @@ The quick start section provides a tutorial which will guide you through the ste
 
 <br>
 
-1. Ensure you have Java `11` or above installed in your Computer.
+<p>Step 1.</p>
+
+Ensure you have Java `11` or above installed in your Computer.
    * To check if you have this installed or for instructions on how to install, refer to our FAQ [here](#frequently-asked-questions).
 
 <br>
 
-2. Download the latest `clientbook.jar` [here](https://github.com/AY2021S2-CS2103T-W15-2/tp/releases/tag/v1.4).
+<p>Step 2.</p>
+
+Download the latest `clientbook.jar` [here](https://github.com/AY2021S2-CS2103T-W15-2/tp/releases/tag/v1.4).
    
 <br>
 
-3. Copy the file to the folder (we will be referring to this folder as the _home folder_) where you want to store the ClientBook application and your client information.
+<p>Step 3.</p>
+
+Copy the file to the folder (we will be referring to this folder as the _home folder_) where you want to store the ClientBook application and your client information.
 
 <br>
 
-4. Double-click the downloaded `clientbook.jar` file in your home folder to start the app. The screen below should appear in a few seconds. 
+<p>Step 4.</p>
+
+Double-click the downloaded `clientbook.jar` file in your home folder to start the app. The screen below should appear in a few seconds. 
    * Alternatively, for those who are tech-savvy, you can launch the application via Command Prompt in Windows or Terminal in Mac OS/Linux using the following command: `java -jar clientbook.jar`. 
    * Note how the app contains some sample data.
     
@@ -110,7 +118,9 @@ The quick start section provides a tutorial which will guide you through the ste
     
 <br>
 
-5. Type the command in the command box and press Enter to execute it.
+<p>Step 5.</p>
+
+Type the command in the command box and press Enter to execute it.
    * Some example commands you can try:
 
 
@@ -124,7 +134,7 @@ The quick start section provides a tutorial which will guide you through the ste
 
 <br>
 
-6. Refer to the [Feature-Description](#feature-description) section below for the full list of commands and their descriptions.
+Please refer to the [Feature-Description](#feature-description) section below for the full list of commands and their descriptions.
 
 [Return to Table of Contents](#table-of-contents)
 
