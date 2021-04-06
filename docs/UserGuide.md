@@ -65,7 +65,7 @@ Please use the table of contents to navigate through the user guide quickly. Cli
         * [**4.3.2** `editshortcut`: Edit shortcut](#editshortcut-edit-shortcut)
         * [**4.3.3** `deleteshortcut`: Delete shortcut](#deleteshortcut-delete-shortcut)
         * [**4.3.4** `listshortcut`: List all shortcuts](#listshortcut-list-all-shortcuts)
-        * [**4.3.5** `clearshortcut`: Clear all shortcuts](#clearshortcut-clear-all-shortcuts)
+        * [**4.3.5** `clearshortcut`: Clear all shortcuts](#clearshortcut-delete-all-shortcuts)
     * [<span style="color:#3cb44b">**4.4** General</span>](#span-stylecolor3cb44bgeneral-featuresspan)  
         * [**4.4.1** `lock`: Lock ClientBook with a user-selected password](#lock-lock-clientbook-with-a-user-selected-password)
         * [**4.4.2** `unlock`: Unlock ClientBook](#unlock-unlock-clientbook)
@@ -92,7 +92,7 @@ The quick start section provides a tutorial which will guide you through the ste
    * To check if you have this installed or for instructions on how to install, refer to our FAQ [here](#frequently-asked-questions).
 
 
-1. Download the latest `clientbook.jar` [here](https://github.com/AY2021S2-CS2103T-W15-2/tp/releases/tag/v1.2).
+1. Download the latest `clientbook.jar` [here](https://github.com/AY2021S2-CS2103T-W15-2/tp/releases/tag/v1.4).
    
 
 1. Copy the file to the folder (we will be referring to this folder as the _home folder_) where you want to store the ClientBook application and your client information.
@@ -198,7 +198,7 @@ to delete all the sample entries and start using your very own ClientBook.
 | [`editshortcut`](#editshortcut-edit-shortcut) | Edit shortcut |
 | [`deleteshortcut`](#deleteshortcut-delete-shortcut) | Delete shortcut |
 | [`listshortcut`](#listshortcut-list-all-shortcuts) | List all shortcuts |
-| [`clearshortcut`](#clearshortcut-clear-all-shortcuts) | Clear all shortcuts |
+| [`clearshortcut`](#clearshortcut-delete-all-shortcuts) | Clear all shortcuts |
 |<span style="color:#3cb44b">**General**</span>|
 | [`lock`](#lock-lock-clientbook-with-a-user-selected-password) | Lock ClientBook with a user-selected password |
 | [`unlock`](#unlock-unlock-clientbook) | Unlock ClientBook |
@@ -810,7 +810,7 @@ If you get an error message (`Java command not found`), it means that Java is no
 [**Edit Shortcut**](#editshortcut-edit-shortcut) | `editshortcut sn/SHORTCUT_NAME sc/SHORTCUT_COMMAND` | `editshortcut sn/ls sc/list` |
 [**Delete Shortcut**](#deleteshortcut-delete-shortcut) | `deleteshortcut SHORTCUT_NAME` | `deleteshortcut ls` |
 [**List Shortcuts**](#listshortcut-list-all-shortcuts) | `listshortcut` | `listshortcut` |
-[**Clear Shortcuts**](#clearshortcut-clear-all-shortcuts) | `clearshortcut` | `clearshortcut` |
+[**Clear Shortcuts**](#clearshortcut-delete-all-shortcuts) | `clearshortcut` | `clearshortcut` |
 |<span style="color:#3cb44b">**General**</span>|
 [**Lock**](#lock-lock-clientbook-with-a-user-selected-password) | `lock [CURRENT_PASSWORD] NEW_PASSWORD` | `lock 123 456` |
 [**Unlock**](#unlock-unlock-clientbook) | `unlock [CURRENT_PASSWORD]` | `unlock 456` |
