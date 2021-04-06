@@ -209,13 +209,14 @@ to delete all the sample entries and start using your very own ClientBook.
 | [Editing data file](#editing-data-file) | Edit the data stored in the file in the home folder|
 
 ### What information can we store for each client contact?
+
+
 Each client attribute such as name and address have been assigned identifiers so that you do not have to type out
 the entire attribute when using ClientBook. For example, name has been abbreviated to n. Listed below are all the identifiers
 which correspond to client attributes as well as restrictions that have to be followed when they are used as part of a command.
 
 Please note that clients may have the same name (two different persons with the same name), phone number (e.g. company phone number), address (e.g. company address),
 email (e.g. company email address) and insurance policies (co-owner of the same policy).
-
 
 <table>
   <tr>
@@ -232,8 +233,8 @@ email (e.g. company email address) and insurance policies (co-owner of the same 
     <td> Phone number </td>
     <td> <code>p</code> </td>
     <td> 
-        <li>Should only contain numbers</li>
-        <li>Must contain at least 3 digits</li>
+        <ul><li>Should only contain numbers</li></ul>
+        <ul><li>Must contain at least 3 digits</li></ul>
     </td>
   </tr>
   <tr>
@@ -244,43 +245,34 @@ email (e.g. company email address) and insurance policies (co-owner of the same 
   <tr>
     <td> Email </td>
     <td> <code>e</code> </td>
-    <td> 
-        <ul>
-            <li>Should be of the form <code>name@email.com</code></li>
-            <li><code>name</code> part of email should not contain the following characters <code>!#$%&'*+/=?\`{&#x7c;}~^.-</code></li>
-            <li> <code>email</code> part of email should: 
-            <li>Be at least 2 characters long</li>
-            <li>Start and end with either alphabets or numbers</li>
-            <li>Consist only of alphabets and/or numbers, hyphens, or periods between characters</li>
-        </ul>
+    <td><ul><li>Should be of the form <code>name@email.com</code></li></ul>
+        <ul><li><code>name</code> part of email should not contain the following characters <code>!#$%&'*+/=?\`{&#x7c;}~^.-</code></li></ul>
+        <ul><li> <code>email</code> part of email should: 
+            <ul><li>Be at least 2 characters long</li></ul>
+            <ul><li>Start and end with either alphabets or numbers</li></ul>
+            <ul><li>Consist only of alphabets and/or numbers, hyphens, or periods between characters</li></ul>
+        </li></ul>
     </td>
   </tr>
   <tr>
     <td> Tag </td>
     <td> <code>t</code> </td>
-    <td> 
-        <ul>
-            <li>Optional</li>
-            <li>Tags can be used to label your relationship with your client e.g. friend, family, classmate</li>
-            <li>Tags associated with a client are shown in alphabetical order in ClientBook</li>
-        </ul> 
+    <td><ul><li>Optional</li></ul>
+        <ul><li>Tags can be used to label your relationship with your client e.g. friend, family, classmate</li></ul>
+        <ul><li>Tags associated with a client are shown in alphabetical order in ClientBook</li></ul>
     </td>
   </tr>
   <tr>
     <td> Insurance Policies </td>
     <td> <code>i</code> </td>
-    <td> 
-        <ul>
-            <li>Optional</li>
-            <li>Should be of the form <code>PolicyId>URL</code> or <code>PolicyId</code></li>
-            <li><code>PolicyId</code> part should not contain the <code>></code> character</li>
-            <li><code>URL</code> part should not contain the <code>></code> character (not a valid website link if it contains <code>></code>)</li>
-            <li>A client should not have duplicate insurance policies</li>
-        </ul>
+    <td><ul><li>Optional</li></ul>
+        <ul><li>Should be of the form <code>PolicyId>URL</code> or <code>PolicyId</code></li></ul>
+        <ul><li><code>PolicyId</code> part should not contain the <code>></code> character</li></ul>
+        <ul><li><code>URL</code> part should not contain the <code>></code> character (not a valid website link if it contains <code>></code>)</li></ul>
+        <ul><li>A client should not have duplicate insurance policies</li></ul>
     </td>
   </tr>
 </table>
-
 
 [Return to Table of Contents](#table-of-contents)
 
