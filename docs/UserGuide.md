@@ -317,7 +317,8 @@ email (e.g. company email address) and insurance policies (co-owner of the same 
 ## Feature Description
 
 ### <span style="color:#b573c9">Contact Management Features</span>
-Contact management features are here to help you in managing your client contacts.
+Contact management features are here to help you to manage your many client contacts.
+It contains basic features such as adding and removing of client contacts.
 
 ### `add`: Add client contact
 
