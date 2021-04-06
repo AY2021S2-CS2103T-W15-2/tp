@@ -341,7 +341,7 @@ A person can have any number of tags and insurance policies (including 0).
 * Example of a client with insurance policy and URL associated with insurance policy
     * `add n/Tom Tan p/91234567 e/tomt@email.com a/Orchard i/Policy_1274>www.myinsurancecompany.com/policy_1274 t/basic`
 * Example with no insurance policy and no tag
-    * `add n/Betsy Crowe e/betsycrowe@email.com a/Kent Ridge`
+    * `add n/Betsy Crowe e/betsycrowe@email.com a/Kent Ridge p/61234567`
 
 [Return to Table of Contents](#table-of-contents)
 <br><br>
