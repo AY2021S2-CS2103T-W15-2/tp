@@ -168,6 +168,7 @@ Now, if you scroll down the contact list, you should find James at the bottom of
 
 <p align="center"><img src="images/newContactJames.png"></p>
 
+<br>
 
 <p><b>Step 2.</b></p>
 
@@ -179,6 +180,7 @@ phone number in ClientBook has been changed to 61234567.
 
 <p align="center"><img src="images/alexYeohChangePhone.png"></p>
 
+<br>
 
 <p><b>Step 3.</b></p>
 
