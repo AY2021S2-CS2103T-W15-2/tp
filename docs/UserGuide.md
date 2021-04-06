@@ -283,6 +283,7 @@ email (e.g. company email address) and insurance policies (co-owner of the same 
   </tr>
 </table>
 
+
 [Return to Table of Contents](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------
@@ -326,7 +327,7 @@ email (e.g. company email address) and insurance policies (co-owner of the same 
 ## Feature Description
 
 ### <span style="color:#b573c9">Contact Management Features</span>
-
+Contact management features are here to help you in managing your client contacts.
 
 ### `add`: Add client contact
 
@@ -474,7 +475,8 @@ If a parameter is expected only once in the command, but you specified it multip
 <br><br>
 
 ### <span style="color:#f75c66">Contact Viewing Features</span>
-
+Contact viewing features allow you to view your client contacts in different ways. For example,
+you may reorder your contact list or look for specific clients.
 
 ### `list`: List all clients 
 
