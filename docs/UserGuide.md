@@ -93,15 +93,15 @@ The quick start section provides a tutorial which will guide you through the ste
 
 <br>
 
-1. Download the latest `clientbook.jar` [here](https://github.com/AY2021S2-CS2103T-W15-2/tp/releases/tag/v1.4).
+2. Download the latest `clientbook.jar` [here](https://github.com/AY2021S2-CS2103T-W15-2/tp/releases/tag/v1.4).
    
 <br>
 
-1. Copy the file to the folder (we will be referring to this folder as the _home folder_) where you want to store the ClientBook application and your client information.
+3. Copy the file to the folder (we will be referring to this folder as the _home folder_) where you want to store the ClientBook application and your client information.
 
 <br>
 
-1. Double-click the downloaded `clientbook.jar` file in your home folder to start the app. The screen below should appear in a few seconds. 
+4. Double-click the downloaded `clientbook.jar` file in your home folder to start the app. The screen below should appear in a few seconds. 
    * Alternatively, for those who are tech-savvy, you can launch the application via Command Prompt in Windows or Terminal in Mac OS/Linux using the following command: `java -jar clientbook.jar`. 
    * Note how the app contains some sample data.
     
@@ -110,7 +110,7 @@ The quick start section provides a tutorial which will guide you through the ste
     
 <br>
 
-1. Type the command in the command box and press Enter to execute it.
+5. Type the command in the command box and press Enter to execute it.
    * Some example commands you can try:
 
 
@@ -122,7 +122,9 @@ The quick start section provides a tutorial which will guide you through the ste
    | `delete 3` | Deletes the 3rd contact in the list (i.e. deletes `Charlotte Oliveiro`) |
    | `exit` | Exits the application |
 
-1. Refer to the [Feature-Description](#feature-description) section below for the full list of commands and their descriptions.
+<br>
+
+6. Refer to the [Feature-Description](#feature-description) section below for the full list of commands and their descriptions.
 
 [Return to Table of Contents](#table-of-contents)
 
