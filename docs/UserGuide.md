@@ -141,7 +141,6 @@ Please refer to the [Feature-Description](#feature-description) section below fo
 --------------------------------------------------------------------------------------------------------------------
 ## Example Usage
 
-### Introduction
 Described below are some commands that you can try to get yourself familiarised with ClientBook.
 
 If you have followed the [Quick Start](#quick-start) guide correctly, you should see the screen below. 
