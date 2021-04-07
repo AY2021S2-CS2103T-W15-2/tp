@@ -339,7 +339,7 @@ email (e.g. company email address) and insurance policies (co-owner of the same 
 Contact management features are here to help you to manage your many client contacts.
 It contains basic features such as adding and removing of client contacts.
 
-### <span style="color:#b573c9"><code>add</code></span>: Add client contact
+### <span style="color:#b573c9"><code>add</code>: Add client contact</span>
 
 **Purpose**: Adds a client as a new contact to ClientBook.
 
@@ -366,7 +366,7 @@ A person can have any number of tags and insurance policies (including 0).
 <br><br>
 
 
-### `edit`: Edit client contact 
+### <span style="color:#b573c9"><code>edit</code>: Edit client contact</span>
 
 **Purpose**: Edits an existing client contact in the ClientBook.
 
@@ -393,7 +393,7 @@ A person can have any number of tags and insurance policies (including 0).
 [Return to Table of Contents](#table-of-contents)
 <br><br>
 
-### `delete`: Delete client contact
+### <span style="color:#b573c9"><code>delete</code>: Delete client contact</span>
 
 **Purpose**: Deletes a specified client's contact from ClientBook.
 
@@ -411,7 +411,7 @@ A person can have any number of tags and insurance policies (including 0).
 [Return to Table of Contents](#table-of-contents)
 <br><br>
 
-### `batch`: Execute commands in batch
+### <span style="color:#b573c9"><code>batch</code>: Execute commands in batch</span>
 
 **Purpose**: Executes the same `edit` or `delete` commands for multiple client contacts so that you do not have to
 enter the same command multiple times.
@@ -447,7 +447,7 @@ If a parameter is expected only once in the command, but you specified it multip
       [Return to Table of Contents](#table-of-contents)
 <br><br>
 
-### `meet`: Schedule a meeting with a client
+### <span style="color:#b573c9"><code>meet</code>: Schedule a meeting with a client</span>
 
 **Purpose**: Schedules a meeting on a particular date, start time, end time and place with a client in ClientBook.
 
@@ -488,7 +488,7 @@ If a parameter is expected only once in the command, but you specified it multip
 Contact viewing features allow you to view your client contacts in different ways. For example,
 you may reorder your contact list or look for specific clients.
 
-### `list`: List all clients 
+### <span style="color:#f75c66"><code>list</code>: List all clients</span>
 
 **Purpose**: Shows a list of all clients in ClientBook. You may use optional identifiers in conjunction with the minus (-)
 symbol to select which client details you want to see, so that you can have a clutter free view of your client contacts.
@@ -512,7 +512,7 @@ symbol to select which client details you want to see, so that you can have a cl
 <br><br>
 
   
-### `find`: Search for client contact based on keywords
+### <span style="color:#f75c66"><code>find</code>: Search for client contact based on keywords</span>
 
 **Purpose**: Finds client contacts based on the attribute and keywords that you specify.
 You may use optional identifiers in conjunction with the minus(-) symbol to limit the details shown, similar to the [`list`](#list-list-all-clients) command.
@@ -553,7 +553,7 @@ You may use optional identifiers in conjunction with the minus(-) symbol to limi
 <br><br>
 
 
-### `policy`: Display policies associated with a client 
+### <span style="color:#f75c66"><code>policy</code>: Display policies associated with a client</span>
 
 **Purpose**: Launches a popup window to show all the policies associated with the selected contact, if the selected contact has any policies.
 
@@ -574,7 +574,7 @@ You may use optional identifiers in conjunction with the minus(-) symbol to limi
 <br><br>
 
 
-### `sort`: Sort list of clients
+### <span style="color:#f75c66"><code>sort</code>: Sort list of clients</span>
 
 **Purpose**: Sorts the current list of clients in ClientBook so that you can view your clients in a particular order.
 
@@ -601,7 +601,7 @@ You may use optional identifiers in conjunction with the minus(-) symbol to limi
 We understand that you might have commands that you frequently use. You may use shortcuts to abbreviate
 those commands to make using ClientBook more convenient.
 
-### `addshortcut`: Add shortcut
+### <span style="color:#ebc000"><code>addshortcut</code>: Add shortcut</span>
 
 **Purpose**: Adds a command shortcut to the shortcut library.
 
@@ -619,7 +619,7 @@ those commands to make using ClientBook more convenient.
 <br><br>
 
 
-### `editshortcut`: Edit shortcut
+### <span style="color:#ebc000"><code>editshortcut</code>: Edit shortcut</span>
 
 **Purpose**: Edits the command of a shortcut in the existing shortcut library.
 
@@ -637,7 +637,7 @@ those commands to make using ClientBook more convenient.
 <br><br>
 
 
-### `deleteshortcut`: Delete shortcut
+### <span style="color:#ebc000"><code>deleteshortcut</code>: Delete shortcut</span>
 
 **Purpose**: Deletes a shortcut from the shortcut library.
 
@@ -654,7 +654,7 @@ those commands to make using ClientBook more convenient.
 <br><br>
 
 
-### `listshortcut`: List all shortcuts
+### <span style="color:#ebc000"><code>listshortcut</code>: List all shortcuts</span>
 
 **Purpose**: Lists all shortcuts in the existing shortcut library in case you want to view the shortcuts that you have previously
 created.
@@ -665,7 +665,7 @@ created.
 <br><br>
 
 
-### `clearshortcut`: Delete all shortcuts
+### <span style="color:#ebc000"><code>clearshortcut</code>: Delete all shortcuts</span>
 
 **Purpose**: Delets all shortcuts in the existing shortcut library.
 
@@ -677,7 +677,7 @@ created.
 ### <span style="color:#3cb44b">General Features</span>
 
 
-### `lock`: Lock ClientBook with a user-selected password 
+### <span style="color:#3cb44b"><code>lock</code>: Lock ClientBook with a user-selected password</span>
 
 **Purpose**: Locks ClientBook and ClientBook's data so that your clients' information is protected against unauthorised access.
 
@@ -709,7 +709,7 @@ created.
 <br><br>
 
 
-### `unlock`: Unlock ClientBook 
+### <span style="color:#3cb44b"><code>unlock</code>: Unlock ClientBook</span>
 
 **Purpose**: Removes ClientBook's password lock.
 
@@ -733,7 +733,7 @@ created.
 [Return to Table of Contents](#table-of-contents)
 <br><br>
 
-### `help`: Viewing help
+### <span style="color:#3cb44b"><code>help</code>: Viewing help</span>
 
 **Purpose**: Shows a message explaining how to access this help page.
 
@@ -744,7 +744,7 @@ created.
 [Return to Table of Contents](#table-of-contents)
 <br><br>
 
-### `exit`: Exiting the program 
+### <span style="color:#3cb44b"><code>exit</code>: Exiting the program</span>
 
 **Purpose**: Exits the program.
 
@@ -753,12 +753,12 @@ created.
 [Return to Table of Contents](#table-of-contents)
 <br><br>
 
-### Keyboard commands
+### <span style="color:#3cb44b">Keyboard commands</span>
 
 **Purpose**: We note that continuously typing the same command keywords can become tiresome. Hence, we have provided 
 [keyboard commands](#summary-of-keyboard-commands) which when pressed, will fill in the command keyword for you.
 
-### Saving data
+### <span style="color:#3cb44b">Saving data</span>
 ClientBook saves its data in a zip-contained json file in the [home folder](#quick-start) automatically after any command that changes the data. There is no need to save manually.
 
 
@@ -766,7 +766,7 @@ ClientBook saves its data in a zip-contained json file in the [home folder](#qui
 <br><br>
 
 
-### Editing data file
+### <span style="color:#3cb44b">Editing data file</span>
 
 ClientBook saves its data as a JSON file. Advanced users are welcome to update their client data directly by editing the data file.
 
