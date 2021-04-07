@@ -49,24 +49,24 @@ Please use the table of contents to navigate through the user guide quickly. Cli
     * [**3.1** Feature Summary](#feature-summary)
     * [**3.2** What information can we store for each client contact?](#what-information-can-we-store-for-each-client-contact)
 * [**4.** Feature Description](#feature-description)
-    * [<span style="color:#b573c9">**4.1** Contact Management</span>](#span-stylecolorb573c9contact-management-featuresspan)
+    * [<span style="color:#b573c9">**4.1** Contact Management</span>](#contact-management-features)
         * [**4.1.1** `add`: Add client contact](#add-add-client-contact)
         * [**4.1.2** `edit`: Edit client contact](#edit-edit-client-contact)
         * [**4.1.3** `delete`Delete client contact](#delete-delete-client-contact)
         * [**4.1.4** `batch` Execute commands in batch](#batch-execute-commands-in-batch)
         * [**4.1.5** `meet`: Schedule a meeting with a client](#meet-schedule-a-meeting-with-a-client)
-    * [<span style="color:#f75c66">**4.2** Contact Viewing</span>](#span-stylecolorf75c66contact-viewing-featuresspan)
+    * [<span style="color:#f75c66">**4.2** Contact Viewing</span>](#contact-viewing-features)
         * [**4.2.1** `list`: List all clients](#list-list-all-clients)
         * [**4.2.2** `find`: Search for client contact based on keywords](#find-search-for-client-contact-based-on-keywords)
         * [**4.2.3** `policy`: Display policies associated with a client](#policy-display-policies-associated-with-a-client)
         * [**4.2.4** `sort`: Sort list of clients](#sort-sort-list-of-clients)
-    * [<span style="color:#ebc000">**4.3** Shortcuts</span>](#span-stylecolorebc000shortcutsspan) 
+    * [<span style="color:#ebc000">**4.3** Shortcuts</span>](#shortcuts) 
         * [**4.3.1** `addshortcut`: Add shortcut](#addshortcut-add-shortcut)
         * [**4.3.2** `editshortcut`: Edit shortcut](#editshortcut-edit-shortcut)
         * [**4.3.3** `deleteshortcut`: Delete shortcut](#deleteshortcut-delete-shortcut)
         * [**4.3.4** `listshortcut`: List all shortcuts](#listshortcut-list-all-shortcuts)
         * [**4.3.5** `clearshortcut`: Clear all shortcuts](#clearshortcut-delete-all-shortcuts)
-    * [<span style="color:#3cb44b">**4.4** General</span>](#span-stylecolor3cb44bgeneral-featuresspan)  
+    * [<span style="color:#3cb44b">**4.4** General</span>](#general-features)  
         * [**4.4.1** `lock`: Lock ClientBook with a user-selected password](#lock-lock-clientbook-with-a-user-selected-password)
         * [**4.4.2** `unlock`: Unlock ClientBook](#unlock-unlock-clientbook)
         * [**4.4.3** `help`: Viewing help](#help-viewing-help)
@@ -335,7 +335,7 @@ email (e.g. company email address) and insurance policies (co-owner of the same 
 
 ## Feature Description
 
-### <span style="color:#b573c9">Contact Management Features</span>
+### <span style="color:#b573c9">###Contact Management Features</span>
 Contact management features are here to help you to manage your many client contacts.
 It contains basic features such as adding and removing of client contacts.
 
