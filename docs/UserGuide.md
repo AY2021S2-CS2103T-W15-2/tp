@@ -50,7 +50,7 @@ Please use the table of contents to navigate through the user guide quickly. Cli
     * [**3.2** What information can we store for each client contact?](#what-information-can-we-store-for-each-client-contact)
 * [**4.** Feature Description](#feature-description)
     * [<span style="color:#b573c9">**4.1** Contact Management</span>](#contact-management-features)
-        * [**4.1.1** `add`: Add client contact](#add-client-contact)
+        * [**4.1.1** `add`: Add client contact](#add-add-client-contact)
         * [**4.1.2** `edit`: Edit client contact](#edit-edit-client-contact)
         * [**4.1.3** `delete`Delete client contact](#delete-delete-client-contact)
         * [**4.1.4** `batch` Execute commands in batch](#batch-execute-commands-in-batch)
