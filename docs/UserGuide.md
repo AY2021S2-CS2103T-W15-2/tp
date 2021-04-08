@@ -279,6 +279,7 @@ email (e.g. company email address) and insurance policies (co-owner of the same 
     <td><ul><li>Optional</li></ul>
         <ul><li>Tags can be used to label your relationship with your client e.g. friend, family, classmate</li></ul>
         <ul><li>Tags associated with a client are shown in alphabetical order in ClientBook</li></ul>
+        <ul><li>If duplicate tags are entered in a command, only 1 will be added to the client.</li></ul>
     </td>
   </tr>
   <tr>
@@ -289,6 +290,7 @@ email (e.g. company email address) and insurance policies (co-owner of the same 
         <ul><li><code>PolicyId</code> part should not contain the <code>></code> character</li></ul>
         <ul><li><code>URL</code> part should not contain the <code>></code> character (not a valid website link if it contains <code>></code>)</li></ul>
         <ul><li>A client should not have duplicate insurance policies</li></ul>
+        <ul><li>If duplicate insurance policies are entered in a command, only 1 will be added to the client.</li></ul>
     </td>
   </tr>
 </table>
@@ -519,9 +521,9 @@ You may use optional identifiers in conjunction with the minus(-) symbol to limi
 
 **Format**: `find IDENTIFIER/KEYWORD [& KEYWORDS]…​ [-IDENTIFIER]…​`
 
-* The `IDENTIFIER` specifies which attribute of the client you want to search for. E.g. if you want to search for a client contact
+* The `IDENTIFIER` specifies which attribute of the client you want to search for. For example, if you want to search for a client contact
   by name, use the `n` identifier.
-    * For more information about the identifiers for each field, refer to [what information can we store for each client contact?](#what-information-can-we-store-for-each-client-contact).
+    * For more information about the identifiers for each field, refer to [What information can we store for each client contact?](#what-information-can-we-store-for-each-client-contact).
 * You may not use multiple attributes as your search criteria e.g. you cannot search for a client using address and name at the same time.
   A command like `find n/David a/Botanic gardens` is invalid.
 * The search is **case-insensitive**. 
@@ -586,7 +588,7 @@ You may use optional identifiers in conjunction with the minus(-) symbol to limi
 
 **Examples**:
 * If you want to see which of your clients have the most policies with you, sort the current list of clients 
-  in **descending** number of insurance policies.
+  by **descending** number of insurance policies owned.
     * `sort -i -des`
 
 * You can also sort the current list of clients by name in **ascending** alphabetical order.
@@ -667,7 +669,7 @@ created.
 
 ### <span style="color:#ebc000"><code>clearshortcut</code>: Delete all shortcuts</span>
 
-**Purpose**: Delets all shortcuts in the existing shortcut library.
+**Purpose**: Deletes all shortcuts in the existing shortcut library.
 
 **Format**: `clearshortcut`
 
@@ -756,10 +758,19 @@ created.
 ### <span style="color:#3cb44b">Keyboard commands</span>
 
 **Purpose**: We note that continuously typing the same command keywords can become tiresome. Hence, we have provided 
-[keyboard commands](#summary-of-keyboard-commands) which when pressed, will fill in the command keyword for you.
+keyboard commands which when pressed, will fill in the command keyword for you.
+
+| Command | Output |
+| --------|------------------ |
+CTRL + A | `add` |
+CTRL + D | `delete` |
+CTRL + E | `edit` |
+CTRL + F | `find` |
+CTRL + L | `list` |
+CTRL + S | `sort` |
 
 ### <span style="color:#3cb44b">Saving data</span>
-ClientBook saves its data in a zip-contained json file in the [home folder](#quick-start) automatically after any command that changes the data. There is no need to save manually.
+ClientBook saves its data in a zip-contained JSON file in the [home folder](#quick-start) automatically after any command that changes the data. There is no need to save manually.
 
 
 [Return to Table of Contents](#table-of-contents)
@@ -841,7 +852,7 @@ If you get an error message (`Java command not found`), it means that Java is no
 --------------------------------------------------------------------------------------------------------------------
 ## Summary of Keyboard Commands
 
-| Shortcut | Output |
+| Command | Output |
 | --------|------------------ |
 CTRL + A | `add` |
 CTRL + D | `delete` |
