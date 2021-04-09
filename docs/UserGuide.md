@@ -114,7 +114,7 @@ Double-click the downloaded `clientbook.jar` file in your home folder to start t
    * Note how the app contains some sample data.
     
         <p align="center"><img src="images/Ui-annotate.png"></p>
-        <p align="center">Graphical user interface of ClientBook.</p>
+        <p align="center">Graphical User Interface of ClientBook.</p>
     
 <br>
 
@@ -147,7 +147,7 @@ If you have followed the [Quick Start](#quick-start) guide correctly, you should
 For each of the commands, type them into the command box and press enter to execute the command.
 
 <p align="center"><img src="images/Ui-annotate.png"></p>
-<p align="center">Graphical user interface of ClientBook.</p>
+<p align="center">Graphical User Interface of ClientBook.</p>
 
 <p><b>Step 1.</b></p> 
 
