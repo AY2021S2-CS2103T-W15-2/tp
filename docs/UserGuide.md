@@ -279,7 +279,7 @@ email (e.g. company email address) and insurance policies (co-owner of the same 
     <td><ul><li>Optional</li></ul>
         <ul><li>Tags can be used to label your relationship with your client e.g. friend, family, classmate</li></ul>
         <ul><li>Tags associated with a client are shown in alphabetical order in ClientBook</li></ul>
-        <ul><li>If duplicate tags are entered in a command, only 1 will be added to the client.</li></ul>
+        <ul><li>If duplicate tags are entered in a command, only 1 will be added to the client</li></ul>
     </td>
   </tr>
   <tr>
@@ -290,7 +290,7 @@ email (e.g. company email address) and insurance policies (co-owner of the same 
         <ul><li><code>PolicyId</code> part should not contain the <code>></code> character</li></ul>
         <ul><li><code>URL</code> part should not contain the <code>></code> character (not a valid website link if it contains <code>></code>)</li></ul>
         <ul><li>A client should not have duplicate insurance policies</li></ul>
-        <ul><li>If duplicate insurance policies are entered in a command, only 1 will be added to the client.</li></ul>
+        <ul><li>If duplicate insurance policies are entered in a command, only 1 will be added to the client</li></ul>
     </td>
   </tr>
 </table>
@@ -345,7 +345,7 @@ It contains basic features such as adding and removing of client contacts.
 
 **Purpose**: Adds a client as a new contact to ClientBook.
 
-**Format**: `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [i/POLICY_ID[>POLICY_URL]] [t/TAG]…​`
+**Format**: `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [i/POLICY_ID[>POLICY_URL]]… [t/TAG]…​`
 
 <div markdown="block" class="alert alert-info">
 :bulb: 
@@ -354,7 +354,7 @@ A person can have any number of tags and insurance policies (including 0).
 </div>
 
 * It is optional to include the `POLICY_URL` for the specified `POLICY_ID`.
-* To include the URL, remember to use '>' to indicate that a particular insurance policy is linked to a URL, as shown in the second example below.
+* To include the URL, remember to use `>` to indicate that a particular insurance policy is linked to a URL, as shown in the second example below.
 
 **Examples**:
 * Example of a client with insurance policy but no URL associated with insurance policy
@@ -374,7 +374,7 @@ A person can have any number of tags and insurance policies (including 0).
 
 **Purpose**: Edits an existing client contact in the ClientBook.
 
-**Format**: `edit INDEX [n/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [i/POLICY_NUMBER]…​ [t/TAG]…​ [m/MEETING]…​`
+**Format**: `edit INDEX [n/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [i/POLICY_ID[>POLICY_URL]]…​ [t/TAG]…​ [m/MEETING]…​`
 
 * Edits the client at the specified `INDEX`.
     * `INDEX` refers to the index number shown in the displayed client list.
@@ -831,8 +831,8 @@ If you get an error message (`Java command not found`), it means that Java is no
 | Action | Format | Example |
 | --------|------------------ | --- |
 |<span style="color:#b573c9">**Contact Management**</span>|
-[**Add**](#add-add-client-contact) | `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [i/POLICY_ID] [t/TAG]…​` | `add n/James Ho p/22224444 e/jamesho@example.com a/123, Clementi Rd, 1234665 i/Policy_1023 t/premium t/lifeinsurance` |
-[**Edit**](#edit-edit-client-contact) | `edit INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [a/ADDRESS] [i/POLICY_NUMBER]…​ [t/TAG]…​` | `edit 2 n/James Lee e/jameslee@example.com` |
+[**Add**](#add-add-client-contact) | `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [i/POLICY_ID[>POLICY_URL]]… [t/TAG]…​` | `add n/James Ho p/22224444 e/jamesho@example.com a/123, Clementi Rd, 1234665 i/Aviva#123>www.aviva.com/123 i/Ocbc#456>www.ocbc.com/456 t/premium t/lifeinsurance` |
+[**Edit**](#edit-edit-client-contact) | `edit INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [a/ADDRESS] [i/POLICY_ID[>POLICY_URL]]…​ [t/TAG]…​` | `edit 2 n/James Lee e/jameslee@example.com` |
 [**Delete**](#delete-delete-client-contact) | `delete INDEX` | `delete 3` |
 [**Batch**](#batch-execute-commands-in-batch) | `batch COMMAND INDICES [ARGUMENTS]` | `batch edit 1, 2, 4 p/91234567 a/Hougang Green t/TanFamily i/FamPol#111` |
 [**Meet**](#meet-schedule-a-meeting-with-a-client) | `meet INDEX [-ACTION] DATE START END PLACE` | `meet 1 20.05.2021 15:00 16:00 MRT` |
