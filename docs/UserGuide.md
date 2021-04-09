@@ -359,12 +359,10 @@ A person can have any number of tags and insurance policies (including 0).
 **Examples**:
 * Example of a client with insurance policy but no URL associated with insurance policy
     * `add n/John Doe p/98765432 e/johnd@email.com a/Orchard i/Pol_#123456 t/basic`
-    
-
+      <br></br>
 * Example of a client with insurance policy and URL associated with insurance policy
     * `add n/Tom Tan p/91234567 e/tomt@email.com a/Orchard i/Policy_1274>www.myinsurancecompany.com/policy_1274 t/basic`
-
-
+      <br></br>
 * Example with no insurance policy and no tag
     * `add n/Betsy Crowe e/betsycrowe@email.com a/Kent Ridge p/61234567`
 
@@ -391,8 +389,7 @@ A person can have any number of tags and insurance policies (including 0).
 *  Edit the phone number and email address of the 1st person to be `91234567` and `johndoe@example.com` respectively.
     * `edit 1 p/91234567 e/johndoe@example.com`
       ![edit 1](images/edit-annotate.png)
-    
-
+      <br></br>
 *  Edit the name of the 2nd person to be `Betsy Crower`.
     * `edit 2 n/Betsy Crower`
 
@@ -411,8 +408,7 @@ A person can have any number of tags and insurance policies (including 0).
 
 **Examples**:
 * `delete 2` deletes the 2nd person in the currently displayed list.
-
-
+  <br></br>
 * `find n/Charlotte` followed by `delete 1` deletes the 1st person in the results of the `find` command.
 
 [Return to Table of Contents](#table-of-contents)
@@ -447,8 +443,7 @@ If a parameter is expected only once in the command, but you specified it multip
 **Examples**:
 * Updating the particulars of clients belonging to the same family and owning the same insurance policy.
     * `batch edit 1, 2, 4 p/61234567 a/Hougang Green t/TanFamily i/FamPol#111`
-
-
+      <br></br>
 * To batch delete more than 1 client contact.
     * `batch delete 1, 2, 4`
 
@@ -477,8 +472,7 @@ If a parameter is expected only once in the command, but you specified it multip
 * Add a meeting and there are no clashes.
     * `meet 1 20.05.2021 15:00 16:00 MRT`
       ![meet-add](images/meet-add.png)
-
-
+      <br></br>
 * Add a meeting but there are clashes.
     * `meet 3 -add 20.05.2021 15:30 17:30 MRT`
       ![meet-clash](images/meet-clash.png)
@@ -509,7 +503,7 @@ symbol to select which client details you want to see, so that you can have a cl
 *  `list` without any specified identifiers shows a list of all clients and all their information.
 
 ![list](images/list.png)
-
+<br></br>
 *  One or more identifiers can be used to make `list` only show the specified information. The following command 
    shows a list of all clients and their phone number and insurance policy number. A client's name and tags will
    be shown regardless of the identifiers that you specify.
@@ -542,22 +536,18 @@ You may use optional identifiers in conjunction with the minus(-) symbol to limi
 **Examples**:
 * Find `Alex David` and `Alex Yeoh`.
   * `find n/alex`
-
-
+    <br></br>
 * Find `Alex David`.
   * `find n/alex david`
   
     ![find_alex_david](images/find_alex_david-annotate.png)
-
-
+    <br></br>
 * Find `Alex David`, `Alex Yeoh` and `David Li`.
   * `find n/alex & david`
-
-
+    <br></br>
 * Find all persons whose address contains `geylang`.
   * `find a/geylang` - returns `Alex Yeoh` whose address is `Blk 30 Geylang Street 29, #06-40`
-
-
+    <br></br>
 * Find the email and phone number of all persons whose names contain `alex` and `david` using the `&` delimiter, and only display their email and phone number.
   * `find n/alex & david -e -p`
     
@@ -582,8 +572,7 @@ You may use optional identifiers in conjunction with the minus(-) symbol to limi
 * `policy 2` displays the policies associated with the 2nd person in the currently displayed list.
   
   ![with policy URL](images/with-policy-URL-annotate.png)
-  
-
+  <br></br>
 * `find n/Bernice` followed by `policy 1` displays the policies associated with the 1st person in the results of the `find` command.
 
 [Return to Table of Contents](#table-of-contents)
@@ -604,8 +593,7 @@ You may use optional identifiers in conjunction with the minus(-) symbol to limi
 * If you want to see which of your clients have the most policies with you, sort the current list of clients 
   by **descending** number of insurance policies owned.
     * `sort -i -des`
-
-
+      <br></br>
 * You can also sort the current list of clients by name in **ascending** alphabetical order.
     * `sort -n -asc`
 
@@ -716,8 +704,7 @@ created.
   * `lock 123`
 
     ![lock 123](images/lock-new-pw.png)
-
-
+    <br></br>
 * Change ClientBook's password from `123` to `456`.
   * `lock 123 456`
 
@@ -743,8 +730,7 @@ created.
     * `unlock 123`
 
       ![unlock 123](images/unlock-wrong-pw.png)
-
-
+      <br></br>
 * Unlock ClientBook with correct password `456`.
     * `unlock 456`
 
