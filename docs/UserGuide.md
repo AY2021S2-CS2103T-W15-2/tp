@@ -503,15 +503,15 @@ symbol to select which client details you want to see, so that you can have a cl
 **Examples**: 
 *  `list` without any specified identifiers shows a list of all clients and all their information.
 
-![list](images/list.png)
+    ![list](images/list.png)
 <br><br>
 *  One or more identifiers can be used to make `list` only show the specified information. The following command 
    shows a list of all clients and their phone number and insurance policy number. A client's name and tags will
    be shown regardless of the identifiers that you specify.
-   
-`list -p -i`
+
+    `list -p -i`
     
-![list phone](images/list-phone-policy-annotate.png)
+    ![list phone](images/list-phone-policy-annotate.png)
 
 [Return to Table of Contents](#table-of-contents)
 <br><br>
