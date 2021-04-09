@@ -38,7 +38,7 @@ If you are an experienced user, we have provided a convenient [Summary of Comman
 Please use the table of contents to navigate through the user guide quickly. ClientBook's commands are grouped into 
 <span style="color:#b573c9">**contact management**</span>, 
 <span style="color:#f75c66">**contact viewing**</span>,
-<span style="color:#ebc000">**shortcuts**</span> and 
+<span style="color:#c9a500">**shortcuts**</span> and 
 <span style="color:#3cb44b">**general**</span> commands.
 
 
@@ -60,7 +60,7 @@ Please use the table of contents to navigate through the user guide quickly. Cli
         * [**4.2.2** `find`: Search for client contact based on keywords](#find-search-for-client-contact-based-on-keywords)
         * [**4.2.3** `policy`: Display policies associated with a client](#policy-display-policies-associated-with-a-client)
         * [**4.2.4** `sort`: Sort list of clients](#sort-sort-list-of-clients)
-    * [<span style="color:#ebc000">**4.3** Shortcuts</span>](#shortcuts) 
+    * [<span style="color:#c9a500">**4.3** Shortcuts</span>](#shortcuts) 
         * [**4.3.1** `addshortcut`: Add shortcut](#addshortcut-add-shortcut)
         * [**4.3.2** `editshortcut`: Edit shortcut](#editshortcut-edit-shortcut)
         * [**4.3.3** `deleteshortcut`: Delete shortcut](#deleteshortcut-delete-shortcut)
@@ -212,7 +212,7 @@ to delete all the sample entries and start using your very own ClientBook.
 | [`find`](#find-search-for-client-contact-based-on-keywords) | Search for client contact based on keywords |
 | [`policy`](#policy-display-policies-associated-with-a-client) | Display policies associated with a selected client |
 | [`sort`](#sort-sort-list-of-clients) | Sort list of clients |
-|<span style="color:#ebc000">**Shortcuts**</span>|
+|<span style="color:#c9a500">**Shortcuts**</span>|
 | [`addshortcut`](#addshortcut-add-shortcut) | Add shortcut |
 | [`editshortcut`](#editshortcut-edit-shortcut) | Edit shortcut |
 | [`deleteshortcut`](#deleteshortcut-delete-shortcut) | Delete shortcut |
@@ -603,11 +603,11 @@ You may use optional identifiers in conjunction with the minus(-) symbol to limi
 [Return to Table of Contents](#table-of-contents)
 <br><br>
 
-### <span style="color:#ebc000">Shortcuts</span>
+### <span style="color:#c9a500">Shortcuts</span>
 We understand that you might have commands that you frequently use. You may use shortcuts to abbreviate
 those commands to make using ClientBook more convenient.
 
-### <span style="color:#ebc000"><code>addshortcut</code>: Add shortcut</span>
+### <span style="color:#c9a500"><code>addshortcut</code>: Add shortcut</span>
 
 **Purpose**: Adds a command shortcut to the shortcut library.
 
@@ -625,7 +625,7 @@ those commands to make using ClientBook more convenient.
 <br><br>
 
 
-### <span style="color:#ebc000"><code>editshortcut</code>: Edit shortcut</span>
+### <span style="color:#c9a500"><code>editshortcut</code>: Edit shortcut</span>
 
 **Purpose**: Edits the command of a shortcut in the existing shortcut library.
 
@@ -643,7 +643,7 @@ those commands to make using ClientBook more convenient.
 <br><br>
 
 
-### <span style="color:#ebc000"><code>deleteshortcut</code>: Delete shortcut</span>
+### <span style="color:#c9a500"><code>deleteshortcut</code>: Delete shortcut</span>
 
 **Purpose**: Deletes a shortcut from the shortcut library.
 
@@ -660,7 +660,7 @@ those commands to make using ClientBook more convenient.
 <br><br>
 
 
-### <span style="color:#ebc000"><code>listshortcut</code>: List all shortcuts</span>
+### <span style="color:#c9a500"><code>listshortcut</code>: List all shortcuts</span>
 
 **Purpose**: Lists all shortcuts in the existing shortcut library in case you want to view the shortcuts that you have previously
 created.
@@ -671,7 +671,7 @@ created.
 <br><br>
 
 
-### <span style="color:#ebc000"><code>clearshortcut</code>: Delete all shortcuts</span>
+### <span style="color:#c9a500"><code>clearshortcut</code>: Delete all shortcuts</span>
 
 **Purpose**: Deletes all shortcuts in the existing shortcut library.
 
@@ -840,7 +840,7 @@ If you get an error message (`Java command not found`), it means that Java is no
 [**Find**](#find-search-for-client-contact-based-on-keywords) | `find IDENTIFIER/KEYWORD [& KEYWORDS]…​ [-IDENTIFIER]…​` | `find a/Bedok & Clementi -p` |
 [**Policy**](#policy-display-policies-associated-with-a-client) | `policy INDEX` | `policy 4` |
 [**Sort**](#sort-sort-list-of-clients) | `sort -IDENTIFIER -DIRECTION` | `sort -n -des` |
-|<span style="color:#ebc000">**Shortcuts**</span>|
+|<span style="color:#c9a500">**Shortcuts**</span>|
 [**Add Shortcut**](#addshortcut-add-shortcut) | `addshortcut sn/SHORTCUT_NAME sc/SHORTCUT_COMMAND` | `addshortcut sn/ls sc/listshortcut` |
 [**Edit Shortcut**](#editshortcut-edit-shortcut) | `editshortcut sn/SHORTCUT_NAME sc/SHORTCUT_COMMAND` | `editshortcut sn/ls sc/list` |
 [**Delete Shortcut**](#deleteshortcut-delete-shortcut) | `deleteshortcut SHORTCUT_NAME` | `deleteshortcut ls` |
