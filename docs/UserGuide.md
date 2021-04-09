@@ -359,8 +359,12 @@ A person can have any number of tags and insurance policies (including 0).
 **Examples**:
 * Example of a client with insurance policy but no URL associated with insurance policy
     * `add n/John Doe p/98765432 e/johnd@email.com a/Orchard i/Pol_#123456 t/basic`
+    
+
 * Example of a client with insurance policy and URL associated with insurance policy
     * `add n/Tom Tan p/91234567 e/tomt@email.com a/Orchard i/Policy_1274>www.myinsurancecompany.com/policy_1274 t/basic`
+
+
 * Example with no insurance policy and no tag
     * `add n/Betsy Crowe e/betsycrowe@email.com a/Kent Ridge p/61234567`
 
@@ -386,9 +390,9 @@ A person can have any number of tags and insurance policies (including 0).
 **Examples**:
 *  Edit the phone number and email address of the 1st person to be `91234567` and `johndoe@example.com` respectively.
     * `edit 1 p/91234567 e/johndoe@example.com`
-      
       ![edit 1](images/edit-annotate.png)
     
+
 *  Edit the name of the 2nd person to be `Betsy Crower`.
     * `edit 2 n/Betsy Crower`
 
@@ -407,6 +411,7 @@ A person can have any number of tags and insurance policies (including 0).
 
 **Examples**:
 * `delete 2` deletes the 2nd person in the currently displayed list.
+
 
 * `find n/Charlotte` followed by `delete 1` deletes the 1st person in the results of the `find` command.
 
@@ -442,11 +447,13 @@ If a parameter is expected only once in the command, but you specified it multip
 **Examples**:
 * Updating the particulars of clients belonging to the same family and owning the same insurance policy.
     * `batch edit 1, 2, 4 p/61234567 a/Hougang Green t/TanFamily i/FamPol#111`
-      <br><br>
+
+
 * To batch delete more than 1 client contact.
     * `batch delete 1, 2, 4`
-      <br><br>
-      [Return to Table of Contents](#table-of-contents)
+
+
+[Return to Table of Contents](#table-of-contents)
 <br><br>
 
 ### <span style="color:#b573c9"><code>meet</code>: Schedule a meeting with a client</span>
@@ -469,16 +476,17 @@ If a parameter is expected only once in the command, but you specified it multip
 **Examples**:
 * Add a meeting and there are no clashes.
     * `meet 1 20.05.2021 15:00 16:00 MRT`
-
       ![meet-add](images/meet-add.png)
+
 
 * Add a meeting but there are clashes.
     * `meet 3 -add 20.05.2021 15:30 17:30 MRT`
-
       ![meet-clash](images/meet-clash.png)
+
 
 * Delete a meeting.
     * `meet 1 -delete 20.05.2021 15:00 16:00 MRT`
+
 
 * Clear all meetings.
     * `meet 2 -clear`
@@ -501,7 +509,7 @@ symbol to select which client details you want to see, so that you can have a cl
 *  `list` without any specified identifiers shows a list of all clients and all their information.
 
 ![list](images/list.png)
-    
+
 *  One or more identifiers can be used to make `list` only show the specified information. The following command 
    shows a list of all clients and their phone number and insurance policy number. A client's name and tags will
    be shown regardless of the identifiers that you specify.
@@ -534,23 +542,28 @@ You may use optional identifiers in conjunction with the minus(-) symbol to limi
 **Examples**:
 * Find `Alex David` and `Alex Yeoh`.
   * `find n/alex`
-<br><br>
+
+
 * Find `Alex David`.
   * `find n/alex david`
   
     ![find_alex_david](images/find_alex_david-annotate.png)
-<br><br>
+
+
 * Find `Alex David`, `Alex Yeoh` and `David Li`.
   * `find n/alex & david`
-<br><br>
+
+
 * Find all persons whose address contains `geylang`.
   * `find a/geylang` - returns `Alex Yeoh` whose address is `Blk 30 Geylang Street 29, #06-40`
-<br><br>
+
+
 * Find the email and phone number of all persons whose names contain `alex` and `david` using the `&` delimiter, and only display their email and phone number.
   * `find n/alex & david -e -p`
     
     ![find_alex_&_david_with_filter](images/find-alex-&-david-with-filter-annotate.png)
-<br><br>
+
+
 [Return to Table of Contents](#table-of-contents)
 <br><br>
 
@@ -570,6 +583,7 @@ You may use optional identifiers in conjunction with the minus(-) symbol to limi
   
   ![with policy URL](images/with-policy-URL-annotate.png)
   
+
 * `find n/Bernice` followed by `policy 1` displays the policies associated with the 1st person in the results of the `find` command.
 
 [Return to Table of Contents](#table-of-contents)
@@ -590,6 +604,7 @@ You may use optional identifiers in conjunction with the minus(-) symbol to limi
 * If you want to see which of your clients have the most policies with you, sort the current list of clients 
   by **descending** number of insurance policies owned.
     * `sort -i -des`
+
 
 * You can also sort the current list of clients by name in **ascending** alphabetical order.
     * `sort -n -asc`
@@ -702,10 +717,12 @@ created.
 
     ![lock 123](images/lock-new-pw.png)
 
+
 * Change ClientBook's password from `123` to `456`.
   * `lock 123 456`
 
     ![lock 456](images/lock-update-pw.png)    
+
 
 [Return to Table of Contents](#table-of-contents)
 <br><br>
@@ -726,6 +743,7 @@ created.
     * `unlock 123`
 
       ![unlock 123](images/unlock-wrong-pw.png)
+
 
 * Unlock ClientBook with correct password `456`.
     * `unlock 456`
