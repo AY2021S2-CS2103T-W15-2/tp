@@ -37,7 +37,7 @@ If you are an experienced user, we have provided a convenient [Summary of Comman
 
 Please use the table of contents to navigate through the user guide quickly. ClientBook's commands are grouped into 
 <span style="color:#b573c9">**contact management**</span>, 
-<span style="color:#f75c66">**contact viewing**</span>,
+<span style="color:#c93640">**contact viewing**</span>,
 <span style="color:#c9a500">**shortcuts**</span> and 
 <span style="color:#3cb44b">**general**</span> commands.
 
@@ -55,7 +55,7 @@ Please use the table of contents to navigate through the user guide quickly. Cli
         * [**4.1.3** `delete`Delete client contact](#delete-delete-client-contact)
         * [**4.1.4** `batch` Execute commands in batch](#batch-execute-commands-in-batch)
         * [**4.1.5** `meet`: Schedule a meeting with a client](#meet-schedule-a-meeting-with-a-client)
-    * [<span style="color:#f75c66">**4.2** Contact Viewing</span>](#contact-viewing-features)
+    * [<span style="color:#c93640">**4.2** Contact Viewing</span>](#contact-viewing-features)
         * [**4.2.1** `list`: List all clients](#list-list-all-clients)
         * [**4.2.2** `find`: Search for client contact based on keywords](#find-search-for-client-contact-based-on-keywords)
         * [**4.2.3** `policy`: Display policies associated with a client](#policy-display-policies-associated-with-a-client)
@@ -207,7 +207,7 @@ to delete all the sample entries and start using your very own ClientBook.
 | [`delete`](#delete-delete-client-contact) | Delete client |
 | [`batch`](#batch-execute-commands-in-batch) | Execute commands in batch |
 | [`meet`](#meet-schedule-a-meeting-with-a-client) | Schedule a meeting with a client |
-|<span style="color:#f75c66">**Contact Viewing**</span>|
+|<span style="color:#c93640">**Contact Viewing**</span>|
 | [`list`](#list-list-all-clients) | List all clients |
 | [`find`](#find-search-for-client-contact-based-on-keywords) | Search for client contact based on keywords |
 | [`policy`](#policy-display-policies-associated-with-a-client) | Display policies associated with a selected client |
@@ -489,11 +489,11 @@ If a parameter is expected only once in the command, but you specified it multip
 [Return to Table of Contents](#table-of-contents)
 <br><br>
 
-### <span style="color:#f75c66">Contact Viewing Features</span>
+### <span style="color:#c93640">Contact Viewing Features</span>
 Contact viewing features allow you to view your client contacts in different ways. For example,
 you may reorder your contact list or look for specific clients.
 
-### <span style="color:#f75c66"><code>list</code>: List all clients</span>
+### <span style="color:#c93640"><code>list</code>: List all clients</span>
 
 **Purpose**: Shows a list of all clients in ClientBook. You may use optional identifiers in conjunction with the minus (-)
 symbol to select which client details you want to see, so that you can have a clutter free view of your client contacts.
@@ -517,7 +517,7 @@ symbol to select which client details you want to see, so that you can have a cl
 <br><br>
 
   
-### <span style="color:#f75c66"><code>find</code>: Search for client contact based on keywords</span>
+### <span style="color:#c93640"><code>find</code>: Search for client contact based on keywords</span>
 
 **Purpose**: Finds client contacts based on the attribute and keywords that you specify.
 You may use optional identifiers in conjunction with the minus(-) symbol to limit the details shown, similar to the [`list`](#list-list-all-clients) command.
@@ -559,7 +559,7 @@ You may use optional identifiers in conjunction with the minus(-) symbol to limi
 <br><br>
 
 
-### <span style="color:#f75c66"><code>policy</code>: Display policies associated with a client</span>
+### <span style="color:#c93640"><code>policy</code>: Display policies associated with a client</span>
 
 **Purpose**: Launches a popup window to show all the policies associated with the selected contact, if the selected contact has any policies.
 
@@ -580,7 +580,7 @@ You may use optional identifiers in conjunction with the minus(-) symbol to limi
 <br><br>
 
 
-### <span style="color:#f75c66"><code>sort</code>: Sort list of clients</span>
+### <span style="color:#c93640"><code>sort</code>: Sort list of clients</span>
 
 **Purpose**: Sorts the current list of clients in ClientBook so that you can view your clients in a particular order.
 
@@ -835,7 +835,7 @@ If you get an error message (`Java command not found`), it means that Java is no
 [**Delete**](#delete-delete-client-contact) | `delete INDEX` | `delete 3` |
 [**Batch**](#batch-execute-commands-in-batch) | `batch COMMAND INDICES [ARGUMENTS]` | `batch edit 1, 2, 4 p/91234567 a/Hougang Green t/TanFamily i/FamPol#111` |
 [**Meet**](#meet-schedule-a-meeting-with-a-client) | `meet INDEX [-ACTION] DATE START END PLACE` | `meet 1 20.05.2021 15:00 16:00 MRT` |
-|<span style="color:#f75c66">**Contact Viewing**</span>|
+|<span style="color:#c93640">**Contact Viewing**</span>|
 [**List**](#list-list-all-clients) | `list [-IDENTIFIER]` | `list -i` |
 [**Find**](#find-search-for-client-contact-based-on-keywords) | `find IDENTIFIER/KEYWORD [& KEYWORDS]…​ [-IDENTIFIER]…​` | `find a/Bedok & Clementi -p` |
 [**Policy**](#policy-display-policies-associated-with-a-client) | `policy INDEX` | `policy 4` |
