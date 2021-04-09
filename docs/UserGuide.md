@@ -388,6 +388,7 @@ A person can have any number of tags and insurance policies (including 0).
 **Examples**:
 *  Edit the phone number and email address of the 1st person to be `91234567` and `johndoe@example.com` respectively.
     * `edit 1 p/91234567 e/johndoe@example.com`
+    
       ![edit 1](images/edit-annotate.png)
       <br><br>
 *  Edit the name of the 2nd person to be `Betsy Crower`.
@@ -472,17 +473,17 @@ If a parameter is expected only once in the command, but you specified it multip
 **Examples**:
 * Add a meeting and there are no clashes.
     * `meet 1 20.05.2021 15:00 16:00 MRT`
+    
       ![meet-add](images/meet-add.png)
-      <br><br>
+  <br><br>
 * Add a meeting but there are clashes.
     * `meet 3 -add 20.05.2021 15:30 17:30 MRT`
+    
       ![meet-clash](images/meet-clash.png)
-
-
+<br><br>
 * Delete a meeting.
     * `meet 1 -delete 20.05.2021 15:00 16:00 MRT`
-
-
+<br><br>
 * Clear all meetings.
     * `meet 2 -clear`
 
