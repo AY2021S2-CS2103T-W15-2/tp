@@ -155,9 +155,9 @@ For each of the commands, type them into the command box and press enter to exec
 
 
 That is a very long command, but it can be broken down into simple parts. We have just added a client called James Lee with the following details:
-* Phone number:91234567
+* Phone number: 91234567
 * Email address: james@gmail.com
-* Address:Blk 123 Serangoon Rd
+* Address: Blk 123 Serangoon Rd
 
 We have also indicated that James is a friend as well as colleague of ours by adding the tags `Friend` and `Colleague`. Lastly,
 we indicated that James has purchased a policy from us with a policy ID of OCBC#412 and that the policy's document can be found at `www.ocbc.com/policy/412`.
