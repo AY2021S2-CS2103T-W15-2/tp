@@ -8,9 +8,9 @@ title: User Guide
 # ClientBook
 
 ClientBook is an application for insurance agents to manage client contacts, optimized for use with just a keyboard,
-but still offering a graphical interface for ease of viewing of client contacts. The purpose of ClientBook is to help 
+while still offering a visual interface for ease of viewing of client contacts. The purpose of ClientBook is to help 
 insurance agents who can type fast to accomplish their client management tasks faster than traditional applications.
-If this is the first time that you are using an application like ClientBook, you do not have to worry. We have included
+If this is the first time that you are using an application like ClientBook, you do not have to worry, as we have included
 a section [here](#how-to-use-this-user-guide) to guide you through this user guide.
 
 <br>
@@ -23,7 +23,8 @@ a section [here](#how-to-use-this-user-guide) to guide you through this user gui
 ## Why ClientBook?
 
 ClientBook is designed for insurance agents who are always on the go. We understand the pain and inconvenience of having to navigate around
-your screen without a mouse while you are out meeting a client. We are also aware that you might have to remember various details about your many clients.
+your screen without a mouse while you are out meeting clients. We are also aware that you might have to remember various details about your many clients,
+and that is difficult.
 
 Thus, ClientBook is born!
 
@@ -133,11 +134,11 @@ Ensure you have Java `11` or above installed in your Computer.
 
 <p><b>Step 2.</b></p>
 
-Download the latest `clientbook.jar` [here](https://github.com/AY2021S2-CS2103T-W15-2/tp/releases).
+Download the latest release of the application, `clientbook.jar`, [here](https://github.com/AY2021S2-CS2103T-W15-2/tp/releases).
 
 <p><b>Step 3.</b></p>
 
-Copy the file to the folder (we will be referring to this folder as the **_home folder_**) where you want to store the ClientBook application and your client information.
+Copy the downloaded file to the folder (we will be referring to this folder as the **_home folder_**) where you want to store the ClientBook application and your client information.
 
 <p><b>Step 4.</b></p>
 
@@ -222,8 +223,10 @@ This command deletes the contact of the third client displayed in the contact li
 [Return to Table of Contents](#table-of-contents)
 
 <div style="page-break-before:always"></div>
+
 ### Conclusion
-Now that you have tried out the basic commands available in ClientBook, you can use the command `batch delete 1,2,3,4,5,6,7`
+Now that you have tried out the basic commands available in ClientBook, go ahead and try out more advanced features that you can find
+in the [Feature-Description](#feature-description) section below. Whenever you like, you can use the command `batch delete 1,2,3,4,5,6,7`
 to delete all the sample entries and start using your very own ClientBook.
 
 
