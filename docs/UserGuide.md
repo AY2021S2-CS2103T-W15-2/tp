@@ -60,43 +60,68 @@ Please use the table of contents to navigate through the user guide quickly. Cli
 <span style="color:#c9a500">**shortcuts**</span> and 
 <span style="color:#3cb44b">**general**</span> commands.
 
-* [**1.** Quick Start](#quick-start)
-* [**2.** Example Usage](#example-usage)
-* [**3.** Overview](#overview)
-    * [**3.1** Feature Summary](#feature-summary)
-    * [**3.2** What information can we store for each client contact?](#what-information-can-we-store-for-each-client-contact)
-* [**4.** Feature Description](#feature-description)
-    * [<span style="color:#b573c9">**4.1** Contact Management</span>](#contact-management-features)
-        * [**4.1.1** `add`: Add a client contact](#add-add-a-client-contact)
-        * [**4.1.2** `edit`: Edit a client contact](#edit-edit-a-client-contact)
-        * [**4.1.3** `delete`Delete a client contact](#delete-delete-a-client-contact)
-        * [**4.1.4** `batch` Execute some commands in batch](#batch-execute-commands-in-batch)
-        * [**4.1.5** `meet`: Schedule a meeting with a client](#meet-schedule-a-meeting-with-a-client)
-    * [<span style="color:#c93640">**4.2** Contact Viewing</span>](#contact-viewing-features)
-        * [**4.2.1** `list`: List all clients](#list-list-all-clients)
-        * [**4.2.2** `find`: Search for client contacts based on keywords](#find-search-for-clients-contact-based-on-keywords)
-        * [**4.2.3** `policy`: Display policies associated with a client](#policy-display-policies-associated-with-a-client)
-        * [**4.2.4** `sort`: Sort the list of clients](#sort-sort-list-of-clients)
-    * [<span style="color:#c9a500">**4.3** Shortcuts</span>](#shortcuts) 
-        * [**4.3.1** `addshortcut`: Add a shortcut](#addshortcut-add-shortcut)
-        * [**4.3.2** `editshortcut`: Edit a shortcut](#editshortcut-edit-shortcut)
-        * [**4.3.3** `deleteshortcut`: Delete a shortcut](#deleteshortcut-delete-shortcut)
-        * [**4.3.4** `listshortcut`: List all shortcuts](#listshortcut-list-all-shortcuts)
-        * [**4.3.5** `clearshortcut`: Clear all shortcuts](#clearshortcut-delete-all-shortcuts)
-    * [<span style="color:#3cb44b">**4.4** General</span>](#general-features)  
-        * [**4.4.1** `lock`: Lock ClientBook with a user-selected password](#lock-lock-clientbook-with-a-user-selected-password)
-        * [**4.4.2** `unlock`: Unlock ClientBook](#unlock-unlock-clientbook)
-        * [**4.4.3** `help`: Viewing help](#help-view-help)
-        * [**4.4.4** `exit`: Exiting the program](#exit-exit-clientbook)
-        * [**4.4.5** Keyboard commands](#keyboard-commands)
-        * [**4.4.5** Saving data](#saving-data)
-        * [**4.4.6** Upcoming features!](#upcoming-features-v20-and-beyond)
-* [**5.** Frequently Asked Questions](#frequently-asked-questions)
-  * [**5.1** Setting Up](#setting-up)
-* [**6.** Summary of Commands](#summary-of-commands)
-* [**7.** Glossary](#glossary)
-* [**8.** Contact Us](#contact-us)
+* [**1.** User Interface](#user-interface)
+* [**2.** Quick Start](#quick-start)
+* [**3.** Example Usage](#example-usage)
+* [**4.** Overview](#overview)
+    * [**4.1** Feature Summary](#feature-summary)
+    * [**4.2** What information can we store for each client contact?](#what-information-can-we-store-for-each-client-contact)
+* [**5.** Feature Description](#feature-description)
+    * [<span style="color:#b573c9">**5.1** Contact Management</span>](#contact-management-features)
+        * [**5.1.1** `add`: Add a client contact](#add-add-a-client-contact)
+        * [**5.1.2** `edit`: Edit a client contact](#edit-edit-a-client-contact)
+        * [**5.1.3** `delete`Delete a client contact](#delete-delete-a-client-contact)
+        * [**5.1.4** `batch` Execute some commands in batch](#batch-execute-commands-in-batch)
+        * [**5.1.5** `meet`: Schedule a meeting with a client](#meet-schedule-a-meeting-with-a-client)
+    * [<span style="color:#c93640">**5.2** Contact Viewing</span>](#contact-viewing-features)
+        * [**5.2.1** `list`: List all clients](#list-list-all-clients)
+        * [**5.2.2** `find`: Search for client contacts based on keywords](#find-search-for-client-contacts-based-on-keywords)
+        * [**5.2.3** `policy`: Display policies associated with a client](#policy-display-policies-associated-with-a-client)
+        * [**5.2.4** `sort`: Sort the list of clients](#sort-sort-list-of-clients)
+    * [<span style="color:#c9a500">**5.3** Shortcuts</span>](#shortcuts) 
+        * [**5.3.1** `addshortcut`: Add a shortcut](#addshortcut-add-shortcut)
+        * [**5.3.2** `editshortcut`: Edit a shortcut](#editshortcut-edit-shortcut)
+        * [**5.3.3** `deleteshortcut`: Delete a shortcut](#deleteshortcut-delete-shortcut)
+        * [**5.3.4** `listshortcut`: List all shortcuts](#listshortcut-list-all-shortcuts)
+        * [**5.3.5** `clearshortcut`: Clear all shortcuts](#clearshortcut-delete-all-shortcuts)
+    * [<span style="color:#3cb44b">**5.4** General</span>](#general-features)  
+        * [**5.4.1** `lock`: Lock ClientBook with a user-selected password](#lock-lock-clientbook-with-a-user-selected-password)
+        * [**5.4.2** `unlock`: Unlock ClientBook](#unlock-unlock-clientbook)
+        * [**5.4.3** `help`: Viewing help](#help-view-help)
+        * [**5.4.4** `exit`: Exiting the program](#exit-exit-clientbook)
+        * [**5.4.5** Keyboard commands](#keyboard-commands)
+        * [**5.4.5** Saving data](#saving-data)
+    * [**5.5** Upcoming features!](#upcoming-features-v20-and-beyond)
+* [**6.** Frequently Asked Questions](#frequently-asked-questions)
+  * [**6.1** Setting Up](#setting-up)
+* [**7.** Summary of Commands](#summary-of-commands)
+* [**8.** Glossary](#glossary)
+* [**9.** Contact Us](#contact-us)
 <div style="page-break-before:always"></div>
+
+## User Interface
+
+<p align="center"><img src="images/Ui-annotate-new.png"></p>
+
+ClientBook makes use of a [graphical user interface](#glossary) to help you manage your client contacts better. This 
+section provides you with a better understanding of what each component of ClientBook's user interface does for you.
+
+ClientBook's [graphical user interface](#glossary) is made up of 4 main components:
+1. Menu Bar
+   * Allows you to get help about how to use ClientBook or exit the application.
+2. Command Box
+   * Allows you to type in your commands to manage your client contacts.
+3. Result Display
+   * Tells you whether your command has been performed successfully.
+4. Client List
+   * Shows you the list of clients stored in your ClientBook.
+
+[Return to Table of Contents](#table-of-contents)
+
+--------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-before:always"></div>
+
 ## Quick Start
 
 The quick start section provides a tutorial which will guide you through the steps needed to get ClientBook running.
@@ -120,7 +145,7 @@ Double-click the downloaded `clientbook.jar` file in your home folder to start t
    * Alternatively, for those who are tech-savvy, you can launch the application via Command Prompt in Windows or Terminal in Mac OS/Linux using the following command: `java -jar clientbook.jar`. 
    * Note how the app contains some sample data.
     
-        <p align="center"><img src="images/Ui-annotate.png" height="330"></p>
+        <p align="center"><img src="images/Ui.png" height="330"></p>
         <p align="center"><a href="#glossary">Graphical User Interface</a> of ClientBook.</p>
 
 <div style="page-break-before:always"></div>
@@ -139,7 +164,7 @@ Type a command in the command box and press Enter to execute it.
    | `delete 3` | Deletes the 3rd contact in the displayed list (i.e. deletes `Charlotte Oliveiro`) |
    | `exit` | Exits ClientBook |
 
-Please refer to the [Feature-Description](#feature-description) section below for the full list of commands and their descriptions.
+Please refer to the [Feature Description](#feature-description) section below for the full list of commands and their descriptions.
 
 [Return to Table of Contents](#table-of-contents)
 
@@ -152,7 +177,7 @@ Described below are some commands that you can try to get yourself familiarised 
 If you have followed the [Quick Start](#quick-start) guide correctly, you should see the screen below. 
 For each of the commands, type them into the command box and press enter to execute the command.
 
-<p align="center"><img src="images/Ui-annotate.png"></p>
+<p align="center"><img src="images/Ui.png"></p>
 <p align="center"><a href="#glossary">Graphical User Interface</a> of ClientBook.</p>
 [Return to Table of Contents](#table-of-contents)
 
@@ -257,7 +282,7 @@ which correspond to client attributes as well as restrictions that have to be fo
 <table>
   <tr>
     <td> <b>Attribute</b> </td>
-    <td> <b>Identifier(s)</b> </td>
+    <td> <b>Identifier</b> </td>
     <td> <b>Notes</b> </td>
   </tr>
   <tr>
@@ -310,11 +335,10 @@ which correspond to client attributes as well as restrictions that have to be fo
         <ul><li><code>DATE</code>: dd.MM.yyyy</li></ul>
         <ul><li><code>START_TIME</code> and <code>END_TIME</code>: HH:mm</li></ul>
         </ul>
-        <ul><li><b>Example:</b> <code>20.05.2021 15:30 16:30 Raffles Place MRT</code></li></ul>
+        <ul><li><b>Example:</b> <code>20.05.2021 15:30 16:30 MRT</code></li></ul>
     </td>
   </tr>
 </table>
-
 [Return to Table of Contents](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------
@@ -805,7 +829,7 @@ Please do not make changes to the data file. If the format is invalid, **all you
 
 <div style="page-break-before:always"></div>
 
-### Upcoming features (v2.0 and beyond!)
+### Upcoming Features (v2.0 and beyond!)
 
 * Archiving data files
 * Customisable user interface
